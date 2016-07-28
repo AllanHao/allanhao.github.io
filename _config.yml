@@ -49,7 +49,7 @@ enableTags: true
 tagarray: []
 
 url: "http://blessing.wang"
-baseurl: "/"
+baseurl: "http://blessing.wang/"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
