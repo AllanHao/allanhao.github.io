@@ -26,16 +26,10 @@ urls:
       target: _blank
       
 social:
-    - icon: fa-facebook
-      link: '#'
-    - icon: fa-skype
-      link: '#'
     - icon: fa-weibo
-      link: '#'
+      link: 'http://weibo.com/allan0602'
     - icon: fa-linkedin
-      link: '#'
-    - icon: fa-stack-exchange
-      link: '#'
+      link: 'http://www.linkedin.com//in/giserallan'
 
 share:
   twitter_username: \#
