@@ -11,9 +11,6 @@ urls:
       url: /
       icon: fa-home
       layout: post
-    - text: Category
-      layout: posts_by_category
-      icon: fa-desktop
     - text: Resume
       url: '#'
       icon: fa-graduation-cap
