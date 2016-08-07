@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "开源GIS研究一"
 date:   2016-08-07 00:33:39
 categories: opengis
