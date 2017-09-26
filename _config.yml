@@ -1,7 +1,7 @@
 title: GISer Allan
 description: My Personal Blog
 author: Allan
-logo: http://blog.blessing.wang/static/img/avatar.png
+logo: https://allanhao.github.io/static/img/avatar.png
 github: https://github.com/allanhao
 about: GIS developer
 disqus_shortname: aboutashu
@@ -39,8 +39,8 @@ share:
 enableTags: true
 tagarray: []
 
-url: "http://blog.blessing.wang"
-baseurl: "http://blog.blessing.wang"
+url: "https://allanhao.github.io"
+baseurl: "https://allanhao.github.io"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
