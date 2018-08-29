@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: allan_hao@163.com
 description: ""
 keyword: "张浩, Allan张浩, 张浩, 张浩的博客, Allan Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 开源,opengis"
-url: "http://allanhao.gitee.io"              # your host, for absolute URL
+url: "http://allanhao.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
