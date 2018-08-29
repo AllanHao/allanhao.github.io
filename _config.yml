@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: allan_hao@163.com
 description: ""
 keyword: "张浩, Allan张浩, 张浩, 张浩的博客, Allan Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 开源,opengis"
-url: "http://allanhao.com"              # your host, for absolute URL
+url: http://allanhao.com              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -43,7 +43,7 @@ gems: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+input: GFM                            # use Github Flavored Markdown !important
 
 
 
@@ -60,8 +60,8 @@ netease_comment: false
 ba_track_id: 3eabbbc6c4010997fb8d78e128d5b75a
 
 # Google Analytics
- ga_track_id: 'UA-124826163-1'            # Format: UA-xxxxxx-xx
- ga_domain: http://allanhao.com
+ga_track_id: 'UA-124826163-1'            # Format: UA-xxxxxx-xx
+ga_domain: http://allanhao.com
 
 
 
