@@ -6,10 +6,10 @@
   name: AllanHao
   url: http://allanhao.com
 
-- sitename: 微博
-  name: 
-  url: http://weibo.com/mzlogin
+# - sitename: 微博
+#   name: 
+#   url: http://weibo.com/mzlogin
 
-- sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin 
+# - sitename: 知乎
+#   name: mzlogin
+#   url: http://www.zhihu.com/people/mzlogin 

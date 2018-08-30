@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
+description: 开源GIS爱好者，致力探索开源GIS生态系统
 keywords: AllanHao, 张浩
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
- 
+开源GIS爱好者，
 
-仰慕「优雅编码的艺术」。
+.NET 开发人员
 
-坚信熟能生巧，努力改变人生。
+致力探索开源GIS生态系统
 
 ## 联系
 

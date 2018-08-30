@@ -5,7 +5,7 @@ baseurl:
 url: https://allanhao.com
 date_format: "ordinal"
 title: Allan
-subtitle: "打码改变人生"
+subtitle: "开源GIS爱好者，致力探索开源GIS生态系统"
 description: "Allan's Blog"
 keywords: 张浩, Allan, AllanHao
 timezone: Asia/Shanghai
@@ -16,8 +16,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Allan
-organization: allanhao.com
-organization_url: http://www.zkh360.com
+# organization: allanhao.com
+# organization_url: http://www.zkh360.com
 github_username: allanhao
 location: Beijing, China
 email: allan_hao@163.com
@@ -81,7 +81,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: allanhao/allanhao.github.io
 
 # ---------------- #
 #      Comments    #
