@@ -5,8 +5,7 @@ date:   2016-08-07 00:33:39
 author: Allan
 categories: opengis
 tags:
-    - opengis
-category: blog
+    - opengis 
 keywords: opengis, gis
 --- 
 

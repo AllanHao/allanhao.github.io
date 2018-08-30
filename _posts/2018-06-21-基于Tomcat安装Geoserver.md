@@ -2,8 +2,7 @@
 layout: post
 title: 基于Tomcat安装Geoserver
 date: 2018-06-21 14:45
-author: Allan
-category: blog
+author: Allan 
 tags:
     - geoserver
     - opengis
