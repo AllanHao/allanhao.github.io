@@ -98,14 +98,14 @@ gitment:
     owner: AllanHao
     repo: blog-comments
     oauth:
-        client_id: af82139197cfdf26cb47
-        client_secret: bdc1b61ac1cd80cc0438df1e0b18f890d56708ed
+        client_id: fb5215dfbe603403e222
+        client_secret: 5915948517e8fcdfc5cc817cc6fb1c2bdd73d420
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: AllanHao
     repo: blog-comments
-    clientID: af82139197cfdf26cb47
-    clientSecret: bdc1b61ac1cd80cc0438df1e0b18f890d56708ed
+    clientID: fb5215dfbe603403e222
+    clientSecret: 5915948517e8fcdfc5cc817cc6fb1c2bdd73d420
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
