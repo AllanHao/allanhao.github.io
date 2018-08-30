@@ -95,11 +95,11 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-#     owner: AllanHao
-#     repo: blog-comments
-#     oauth:
-#         client_id: af82139197cfdf26cb47
-#         client_secret: bdc1b61ac1cd80cc0438df1e0b18f890d56708ed
+    owner: AllanHao
+    repo: blog-comments
+    oauth:
+        client_id: af82139197cfdf26cb47
+        client_secret: bdc1b61ac1cd80cc0438df1e0b18f890d56708ed
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: AllanHao
