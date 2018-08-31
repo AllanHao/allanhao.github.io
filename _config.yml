@@ -123,3 +123,6 @@ simple_jekyll_search:
 # ---------------- #
 google:
     analytics_id: UA-124826163-1
+
+baidu:
+    analytics_id: 3eabbbc6c4010997fb8d78e128d5b75a
