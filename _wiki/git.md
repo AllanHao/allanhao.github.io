@@ -50,8 +50,38 @@ keywords: Git, 版本控制
 
  ```
 
- 2. 
-    
+ 2. 合并分支branch的指定commit到master
+
+ ```
+ # 找到branch分支上的指定commit，如ebb9e
+ git log
+
+ # 将版本切换到master
+ git checkout master
+
+ # 更新到master最新代码
+ git pull orgin master
+
+ # 将branch commit 版本ebb9e 同步到master
+ git cherry-pick ebb9e
+
+ ```
+
+3. 合并分支branch指定文件到master
+
+```
+# 将版本切换到master
+ git checkout master
+
+ # 更新到master最新代码
+ git pull orgin master
+
+ # 将branch package.json文件同步到master
+ git merge branch package.json
+
+```
+
+[引用地址](https://www.cnblogs.com/phpper/p/7609238.html)
 
 ### 如何解决gitk中文乱码，git ls-files 中文文件名乱码问题？
 
