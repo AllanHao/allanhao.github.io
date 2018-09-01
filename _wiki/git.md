@@ -36,7 +36,7 @@ keywords: Git, 版本控制
 
 ### 同步代码到其他分支
 
- 1. 合并分支branch到master
+ * 合并分支branch到master
 
  ```
  # 将版本切换到master分支上
@@ -50,7 +50,7 @@ keywords: Git, 版本控制
 
  ```
 
- 2. 合并分支branch的指定commit到master
+ * 合并分支branch的指定commit到master
 
  ```
  # 找到branch分支上的指定commit，如ebb9e
@@ -67,7 +67,7 @@ keywords: Git, 版本控制
 
  ```
 
-3. 合并分支branch指定文件到master
+* 合并分支branch指定文件到master
 
 ```
 # 将版本切换到master
