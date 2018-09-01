@@ -34,6 +34,25 @@ keywords: Git, 版本控制
 
 ## Q&A
 
+### 同步代码到其他分支
+
+ 1. 合并分支branch到master
+
+ ```
+ # 将版本切换到master分支上
+ git checkout master
+
+ # 更新到master最新代码
+ git pull orgin master
+
+ # 将branch代码合并到master
+ git merge branch
+
+ ```
+
+ 2. 
+    
+
 ### 如何解决gitk中文乱码，git ls-files 中文文件名乱码问题？
 
 在~/.gitconfig中添加如下内容
