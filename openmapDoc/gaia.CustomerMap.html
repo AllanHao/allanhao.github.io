@@ -978,7 +978,7 @@
 </div>
 
     <div class="main">
-        <h1 class="page-title" data-filename="gaia.html">Namespace: gaia</h1>
+        <h1 class="page-title" data-filename="gaia.CustomerMap.html">Class: CustomerMap</h1>
         <div id="latest-check" class="alert alert-warning alert-dismissible" role="alert" style="display:none">
           <button id="latest-dismiss" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           This documentation is for OpenLayers v<span id="package-version"></span>. The <a id="latest-link" href="#" class="alert-link">latest</a> is v<span id="latest-version"></span>.
@@ -990,11 +990,12 @@
 <section>
 
 <header>
-    <h2>gaia
+    <h2>
+        <span class="ancestors"><a href="gaia.html">gaia</a>.</span>CustomerMap
     </h2>
     <br>
     
-    <pre class="prettyprint source"><code>import gaia from 'gaia';</code></pre>
+    <pre class="prettyprint source"><code>import CustomerMap from '<a href="gaia.html">gaia</a>/customermap';</code></pre>
     
     
 </header>
@@ -1005,8 +1006,273 @@
 
     
         
-
+<dt class="">
+    <div class="nameContainer">
         
+        <div class="anchor" id="CustomerMap">
+        </div>
+        <h4 class="name">
+            new gaia.CustomerMap<span class="signature">(opt_mapWin, opt_mapCtrl, opt_cusMap)</span>
+            
+            
+
+        </h4>
+        
+        <div class="tag-source">
+            demo.map.js, line 8
+        </div>
+        
+        
+    </div>
+    
+</dt>
+<dd class="">
+
+    
+    <div class="description">
+        <p>自定义客户端地图，负责实现图层加载逻辑</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>mapWin</code></td>
+            
+            
+            
+            
+            <td colspan=2 class="description last">
+                
+                <p>mapWinForm配置参数</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>renderDiv</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>地图DivId</p></td>
+        </tr>
+	
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>enableAutoAround</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>是否缩小自动显示周边</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>mapCtrl</code></td>
+            
+            
+            
+            
+            <td colspan=2 class="description last">
+                
+                <p>mapControl配置参数</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>datetime</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>地图时间</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>cusMap</code></td>
+            
+            
+            
+            
+            <td colspan=2 class="description last">
+                
+                <p>customerMap配置参数</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>datetime</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>地图时间</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+
+    
 <dl class="details">
     
         
@@ -1032,65 +1298,96 @@
 </dl>
 
 
-        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
     
     </div>
 
     
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        <ul>
+            <li><a href="gaia.MapWinForm.html">gaia.MapWinForm</a></li>
+        </ul>
+    
+
+    
+
+    
 
     
 
     
 
     
-        <h3 class="subsection-title">Classes</h3>
+
+    
+        <h3 class="subsection-title">Members</h3>
 
         <dl>
-            <dt><a href="gaia.Constant.html">Constant</a></dt>
-            <dd></dd>
+            
+<dt class="">
+    <div class="nameContainer">
+        <div class="anchor" id="mapControl">
+        </div>
+        <h4 class="name">
+            mapControl<span class="type-signature type gaia.mapcontrol">{<a href="gaia.MapControl.html">gaia.MapControl</a>}</span> 
+            
+
+        </h4>
+    </div>
+    
+</dt>
+<dd class="">
+    
+    <div class="description">
+        <p>MapControl对象</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
         
-            <dt><a href="gaia.CustomerMap.html">CustomerMap</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.MapControl.html">MapControl</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.MapManager.html">MapManager</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.MapWinForm.html">MapWinForm</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.Observable.html">Observable</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.Request.html">Request</a></dt>
-            <dd></dd>
-        
-            <dt><a href="gaia.Util.html">Util</a></dt>
-            <dd></dd>
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
         </dl>
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#gaia.events"><a href="gaia.events.html">events</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#gaia.interaction"><a href="gaia.interaction.html">interaction</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#gaia.layer"><a href="gaia.layer.html">layer</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
     
 
     
