@@ -8,7 +8,7 @@ menu: 关于
 permalink: /about/
 ---
 
-开源GIS爱好者，
+开源GIS爱好者
 
 .NET 开发人员
 
