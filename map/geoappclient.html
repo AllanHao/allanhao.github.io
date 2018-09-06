@@ -187,7 +187,7 @@
             console.log("收到消息:" + message.payloadString);
             const obj = JSON.parse(message.payloadString);
             if (obj.clientId && obj.coordinate) {
-                const _coordinate =ol.proj.transform(obj.coordinate, 'EPSG:4326', 'EPSG:3857');// obj.coordinate;//
+                const _coordinate = ol.proj.transform(obj.coordinate, 'EPSG:4326', 'EPSG:3857');// obj.coordinate;//
                 if (mqFeatureDic[obj.clientId] == undefined) {
                     mqFeatureDic[obj.clientId] = {
                         positionFeature: new ol.Feature({
@@ -210,7 +210,7 @@
                     mqFeatureDic[obj.clientId].positionFeature.set('speed', obj.speed);
                 }
 
-                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed') : '';
+                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed').toFixed(2) : '';
                 const _style = new ol.style.Style({
                     image: new ol.style.Circle({
                         radius: 6,
