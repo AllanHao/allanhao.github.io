@@ -211,7 +211,7 @@
                     mqFeatureDic[obj.clientId].positionFeature.set('speed', obj.speed);
                 }
 
-                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed').toFixed(2) : '';
+                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed'): '';
                 const _style = new ol.style.Style({
                     image: new ol.style.Circle({
                         radius: 6,
