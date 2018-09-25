@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VS Code运行html文件
-categories: [VSCode]
+categories: [VS Code]
 description: 
 keywords: VSCode
 ---
