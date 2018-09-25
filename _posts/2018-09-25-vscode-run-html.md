@@ -11,16 +11,16 @@ keywords: VS Code
 ### 配置tasks.json ###
 
 1. 打开VS Code，点击“终端”，选择“配置任务”。
-   ![](https://allanhao.com/images/1.jpg)
+   ![](https://allanhao.com/images/vscode-run-html/1.jpg)
 
 2. 选择“使用模板创建tasks.json文件”。
-   ![](https://allanhao.com/images/2.jpg)
+   ![](https://allanhao.com/images/vscode-run-html/2.jpg)
 
 3. 选择“Others”。
-   ![](https://allanhao.com/images/3.jpg)
+   ![](https://allanhao.com/images/vscode-run-html/3.jpg)
 
 4. tasks.json新建完成，默认如下图：
-   ![](https://allanhao.com/images/4.jpg)
+   ![](https://allanhao.com/images/vscode-run-html/4.jpg)
 
 5. 修改tasks.json
 
@@ -53,4 +53,4 @@ keywords: VS Code
 ### 运行任务 ###
 
 选中需要运行的html文件，按住Ctrl+Shift+B，选择“在Chome中运行”，即可。
-![](https://allanhao.com/images/5.jpg)
+![](https://allanhao.com/images/vscode-run-html/5.jpg)
