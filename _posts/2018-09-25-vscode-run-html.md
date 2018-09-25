@@ -1,9 +1,9 @@
 ---
 layout: post
 title: VS Code运行html文件
-categories: [VS Code]
+categories: [VSCode]
 description: 
-keywords: VS Code
+keywords: VSCode
 ---
 
 用VS Code编写html文件，想在VS Code中直接打开运行，配置如下：
