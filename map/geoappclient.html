@@ -158,6 +158,10 @@
             })
         });
 
+
+        const str = location.href; //取得整个地址栏
+        const num = str.indexOf("?")
+        const sub = str.substr(num + 1); //取得所有参数   
         const mqFeatureDic = {};
         const _clientId = guid();
         var _failedCount = 0;
@@ -167,7 +171,7 @@
         function onConnect() {
             _connected = true;
             console.log("onConnected");
-            client.subscribe("/geolocation");//订阅主题  
+            client.subscribe("/" + sub);//订阅主题  
             el('info').innerText = 'MQTT服务器连接成功。';
             _failedCount = 0;
         }
@@ -211,7 +215,7 @@
                     mqFeatureDic[obj.clientId].positionFeature.set('speed', obj.speed);
                 }
 
-                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed'): '';
+                const _text = mqFeatureDic[obj.clientId].positionFeature.get('speed') ? '速度：' + mqFeatureDic[obj.clientId].positionFeature.get('speed') : '';
                 const _style = new ol.style.Style({
                     image: new ol.style.Circle({
                         radius: 6,
