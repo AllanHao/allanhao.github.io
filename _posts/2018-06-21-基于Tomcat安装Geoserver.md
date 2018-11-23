@@ -25,21 +25,21 @@ categories: [geoserver,opengis]
 
 
 
-![image.png | left | 665x611](https://cdn.nlark.com/yuque/0/2018/png/203024/1541666950899-d272255a-1a13-4294-a4f6-f88a7e01d249.png "")
+![](https://cdn.nlark.com/yuque/0/2018/png/203024/1541666950899-d272255a-1a13-4294-a4f6-f88a7e01d249.png)
 
 
 * 双击bin/startup.bat启动Tomcat服务。
 * 输入http://127.0.0.1:8080，出现如下界面说明安装成功。
       
 
-![image.png | left | 827x732](https://cdn.nlark.com/yuque/0/2018/png/203024/1541667202619-933d6c0e-6cc3-4b76-80a8-9308b6ed4dba.png "")
+![](https://cdn.nlark.com/yuque/0/2018/png/203024/1541667202619-933d6c0e-6cc3-4b76-80a8-9308b6ed4dba.png)
 
 
 * 点击Manager App，输入上图中设置的用户名密码，即可进入app管理界面。
 
 
 
-![image.png | left | 827x328](https://cdn.nlark.com/yuque/0/2018/png/203024/1541667359930-2ec14b41-58d0-4f76-b56e-abe537def919.png "")
+![](https://cdn.nlark.com/yuque/0/2018/png/203024/1541667359930-2ec14b41-58d0-4f76-b56e-abe537def919.png)
 
 
 * 至此，Tomcat安装完成。
@@ -74,8 +74,8 @@ keytool -genkeypair -alias tomcat -keyalg RSA -keypass password -storepass passw
 
 ```xml
   <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-			   clientAuth="false" sslProtocol="TLS"
-			   keystoreFile="conf/t.keystore" keystorePass="password"
-	/>
+    maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
+	clientAuth="false" sslProtocol="TLS"
+	keystoreFile="conf/t.keystore" keystorePass="password"
+  />
 ```
