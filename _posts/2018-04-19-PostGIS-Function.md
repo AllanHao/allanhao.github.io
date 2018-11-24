@@ -6,7 +6,7 @@ author:     "Allan"
 tags:
     - postgis
     - opengis
-categories: [postGIS]
+categories: [PostGIS]
 ---
 
 ## PostGIS 函数备忘
