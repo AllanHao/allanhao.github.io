@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 申请免费通配符证书(Let's Encrypt)并绑定IIS（转载）
-categories: [SSL]
+categories: [运维]
 description: 申请免费通配符证书(Let's Encrypt)并绑定IIS（转载）
 keywords: Let's encrypt
 ---

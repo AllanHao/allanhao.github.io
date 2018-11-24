@@ -6,7 +6,7 @@ author: Allan
 tags:
     - geoserver
     - opengis
-categories: [geoserver,opengis]
+categories: [GeoServer,运维]
 ---
 
 ## 安装Tomcat

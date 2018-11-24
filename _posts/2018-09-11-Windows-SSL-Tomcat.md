@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's Encrypt的申请与应用（IIS，Tomcat）
-categories: [SSL, Tomcat]
+categories: [运维]
 description: windows下申请Let's encrypt免费证书配置到IIS和Tomcat
 keywords: Let's encrypt, Tomcat
 ---
