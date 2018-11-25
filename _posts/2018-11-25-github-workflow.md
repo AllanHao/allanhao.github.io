@@ -9,6 +9,7 @@ keywords: github, git
 说来惭愧，这么长时间，第一次参与修改开源项目，所以整理了一份GitHub团队协作流程，作为备忘，文章大部分内容参考[https://www.cnblogs.com/schaepher/p/4933873.html](https://www.cnblogs.com/schaepher/p/4933873.html)
 
 <!-- TOC -->
+## GitHub开发流程
 
 - [零、前期准备：](#零前期准备)
 - [一、创建开发分支](#一创建开发分支)
