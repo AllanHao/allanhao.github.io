@@ -28,7 +28,7 @@ keywords: github, git
 首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。
 Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。
 
- ![](../images/2018-11-26-16-54-38.png)
+ ![](https://allanhao.com/images/2018-11-26-16-54-38.png) 
 
 ## 一、创建开发分支
 
@@ -37,11 +37,11 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 下面图片写的是develop，是因为我们这个项目已经有dev分支了。如果你们没有dev分支，那么名字改成dev即可。这个影响不大。
 
-![](https://img-blog.csdnimg.cn/20181125200339413.png)
+![](https://allanhao.com/images/2018-11-26-17-11-35.png)
 
 分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。
 
-![](https://img-blog.csdnimg.cn/20181125200422726.png)
+![](https://allanhao.com/images/2018-11-26-17-11-57.png)
 
 ## 二、Fork项目到个人的仓库
 
