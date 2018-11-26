@@ -47,11 +47,11 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。
 
-![](https://img-blog.csdnimg.cn/20181125200449418.png)
+![](https://allanhao.com/images/2018-11-26-17-15-02.png)
 
 Fork完成后
 
-![](https://img-blog.csdnimg.cn/20181125200507561.png)
+![](https://allanhao.com/images/2018-11-26-17-15-18.png)
 
 ## 三、Clone项目到本地
 
@@ -60,15 +60,15 @@ Fork完成后
 推荐使用SSH协议，用HTTP协议有时会出问题。
 注意，这里clone的是你自己仓库里的项目
 
-![](https://img-blog.csdnimg.cn/20181125200539632.png)
+![](https://allanhao.com/images/2018-11-26-17-17-23.png)
 
 打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地
 
-![](https://img-blog.csdnimg.cn/20181125200554829.png)
+![](https://allanhao.com/images/2018-11-26-17-17-50.png)
 
 此时你只能看到master分支，并没有把dev分支clone下来。使用 git branch 命令查看本地分支，发现本地只有master分支。如下图的①
 
-![](https://img-blog.csdnimg.cn/20181125200612922.png)
+![](https://allanhao.com/images/2018-11-26-17-18-05.png)
 
 如上图的②，使用 git branch -a 查看所有分支，就能看到远程分支。
 根据远程分支，我们可以创建一个新的本地分支dev，并把该项目的dev分支的内容放到本地dev分支。如上图③。
@@ -77,7 +77,7 @@ git checkout -b dev origin/dev 的意思是，创建一个dev分支（-b），�
 
 现在使用 git branch 可以查看两个分支，并且用 ls 或者 dir 就能看到dev分支的内容了。想切换回master分支的时候，再用 git checkout master 即可。
 
-![](https://img-blog.csdnimg.cn/20181125200654531.png)
+![](https://allanhao.com/images/2018-11-26-17-18-27.png)
 
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。
 
@@ -85,14 +85,14 @@ git checkout -b dev origin/dev 的意思是，创建一个dev分支（-b），�
 
 首先查看有没有设置upstream，使用 git remote -v 命令来查看。如下图①
 
-![](https://img-blog.csdnimg.cn/20181125200737860.png)
+![](https://allanhao.com/images/2018-11-26-17-18-43.png)
 
 如果没有显示upstream，则使用 git remote add upstream 团队项目地址 命令。如上图②
 接着再次使用 git remote -v ，如果如上图③，显示出了upstream，那么就设置好了
 
 开始同步。首先执行 git fetch upstream 获取团队项目最新版本。如下图①
 
-![](https://img-blog.csdnimg.cn/20181125200757346.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-19-00.png)
 
 此时并没有把最新版本合并到你本地的分支上，因此还需要一步。如上图②，当前分支是dev分支，执行 git merge upstream/dev 命令后，会将源分支（upstream/dev）合并到当前分支（dev）。
 
@@ -105,23 +105,23 @@ merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的
 
 注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。
 
-![](https://img-blog.csdnimg.cn/20181125200830854.png)
+![](https://allanhao.com/images/2018-11-26-17-19-17.png)
 
 ## 六、请求合并到团队项目上
 
 首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request
 
-![](https://img-blog.csdnimg.cn/20181125200854602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-19-32.png)
 
 下图左边红框，表示要合并到fzu2015/CourseManagement项目的dev分支。  
 下图右边红框，表示要从自己仓库的dev分支发起合并请求。   
 点击红框处的 Create pull request就可以发送合并请求了。   
 
-![](https://img-blog.csdnimg.cn/20181125200910662.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-19-52.png)
 
 当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。如下图
 
-![](https://img-blog.csdnimg.cn/20181125200928182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-20-12.png)
 
 以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。
 
@@ -129,11 +129,11 @@ merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的
 
 首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。
 
-![](https://img-blog.csdnimg.cn/20181125200958607.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-20-34.png)
 
 选择一个Pull request
 
-![](https://img-blog.csdnimg.cn/2018112520101340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-21-00.png)
 
 项目负责人审核有两个要注意的地方:
 
@@ -143,6 +143,6 @@ merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的
 
 > 如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。
 
-![](https://img-blog.csdnimg.cn/20181125201049841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://allanhao.com/images/2018-11-26-17-21-18.png)
 
 * 如果没有问题，可以点击Merge pull request。这样就合并好了。
