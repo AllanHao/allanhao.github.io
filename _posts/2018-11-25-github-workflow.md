@@ -29,7 +29,7 @@ keywords: github, git
 首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。
 Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。
 
-![](https://img-blog.csdnimg.cn/20181125200227544.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200227544.png)
 
 ## 一、创建开发分支
 
@@ -38,21 +38,21 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 下面图片写的是develop，是因为我们这个项目已经有dev分支了。如果你们没有dev分支，那么名字改成dev即可。这个影响不大。
 
-![](https://img-blog.csdnimg.cn/20181125200339413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200339413.png)
 
 分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。
 
-![](https://img-blog.csdnimg.cn/20181125200422726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200422726.png)
 
 ## 二、Fork项目到个人的仓库
 
 点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。
 
-![](https://img-blog.csdnimg.cn/20181125200449418.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200449418.png)
 
 Fork完成后
 
-![](https://img-blog.csdnimg.cn/20181125200507561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200507561.png)
 
 ## 三、Clone项目到本地
 
@@ -78,7 +78,7 @@ git checkout -b dev origin/dev 的意思是，创建一个dev分支（-b），�
 
 现在使用 git branch 可以查看两个分支，并且用 ls 或者 dir 就能看到dev分支的内容了。想切换回master分支的时候，再用 git checkout master 即可。
 
-![](https://img-blog.csdnimg.cn/20181125200654531.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsbGFuSGFv,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20181125200654531.png)
 
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。
 
