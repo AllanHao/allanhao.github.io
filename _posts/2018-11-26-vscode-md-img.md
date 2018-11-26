@@ -11,7 +11,7 @@ VS Code默认支持Markdown文件文件格式，这里介绍两个比较实用�
 ## 实时预览
 
 顾名思义，实时编辑，实时预览解析效果。
-![](https://allanhao.com/images/2018-11-26-17-34-53.png)
+![](https://allanhao.com/images/2018-11-26-17-34-53.png)  
 
 在VS Code扩展中搜索“Markdown Preview Enhanced”，安装完成后重载即可。
 ![](https://allanhao.com/images/2018-11-26-17-36-26.png)
@@ -37,4 +37,5 @@ CSDN中就可以直接截图，复制粘贴，就传到CSDN服务器生成了图
 //下面这点尤为重要，在下面插入域名地址，这样发布后才可能访问到。    
 "pasteImage.insertPattern": "${imageSyntaxPrefix}https://allanhao.com/${imageFilePath}${imageSyntaxSuffix}"
 ```
+
 
