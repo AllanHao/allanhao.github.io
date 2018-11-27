@@ -11,7 +11,7 @@ categories: [PostGIS]
 
 ## PostGIS 函数备忘
 
-```
+```sql
 SELECT row_to_json(fc)
 FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
 FROM (SELECT 'Feature' As type
@@ -20,7 +20,7 @@ FROM (SELECT 'Feature' As type
 FROM locations As lg ) As f ) As fc;
 ```
 
-```
+```sql
 select name,
 (ST_distance(geom::geography, ST_GeomFromText('POINT(116.389 39.918)', 4326)::geography)) 
 as distance
@@ -30,7 +30,7 @@ ST_dwithin(geom::geography, ST_GeomFromText('POINT(116.389 39.918)', 4326)::geog
 order By distance asc
 ```
 
-```
+```sql
 select ST_AsText(ST_Intersection(
 c.geom,b.the_geom) ) as line,b.name as storeName ,c.macName
 from (
