@@ -27,7 +27,7 @@ CSDN中就可以直接截图，复制粘贴，就传到CSDN服务器生成了图
 
 这里我只是修改了三处配置
 
-```JavaScript
+```javascript
 //图片保存在根目录下的images文件夹下     
 "pasteImage.path": "${projectRoot}/images",  
 
