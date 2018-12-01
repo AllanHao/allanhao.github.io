@@ -29,6 +29,9 @@ categories: [GeoServer,运维]
 
 
 * 双击bin/startup.bat启动Tomcat服务。
+
+**注意：**如果双击startup.bat闪退，检查环境变量中是否有“JAVA_HOME”变量，如果没有添加JAVA_HOME变量，值为“C:\Program Files\Java\jdk1.8.0_191\”     
+
 * 输入http://127.0.0.1:8080，出现如下界面说明安装成功。
       
 
