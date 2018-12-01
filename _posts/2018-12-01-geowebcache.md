@@ -8,7 +8,7 @@ keywords: GeoWebCache
 
 在进行GIS项目开发中，常使用Geoserver作为开源的地图服务器，Geoserver是一个JavaEE项目，常通过Tomcat进行部署。而GeoWebCache是一个采用Java实现用于缓存WMS-Tile(瓦片)的开源项目。当客户端请求一张新地图和Tile时，GeoWebCache将拦截这些调用然后返回缓存过的Tiles。 本文主要讲述独立部署GeoWebCache，并且复用已经切好的瓦片缓存。
 
-在实际项目中，需要对比较大数据量的地图切缓存，例如全国地图，并且移植复用，进行私有云部署。那么如果GeoWebCache直接发布已经切好的缓存呢？
+在实际项目中，需要对比较大数据量的地图切缓存，例如全国地图，并且移植复用，进行私有云部署。那么如果用GeoWebCache直接发布已经切好的缓存呢？
 
 ## 一、下载安装GeoWebCache(GWC)
 
