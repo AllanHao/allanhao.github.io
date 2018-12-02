@@ -93,9 +93,9 @@ GWC默认的数据缓存目录在%temp%\geowebcache中，我们将其修改至D:
 
 ## 四、问题解决
 
-通过openlayers访问时会出现烦人的400错误，通过查看客户端代码发现，extend为[-180,-90,180,90]
+通过openlayers访问时会出现烦人的400错误，通过查看客户端代码发现，extent为[-180,-90,180,90]
 ![](https://allanhao.com/images/2018-12-01-20-25-38.png)
 ![](https://allanhao.com/images/2018-12-01-20-27-07.png)
 
-我们只需改为地图实际的extend即可：
+我们只需改为地图实际的extent即可：
 ![](https://allanhao.com/images/2018-12-01-20-27-46.png)
