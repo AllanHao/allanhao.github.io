@@ -35,3 +35,17 @@ Web.config中是Nuget站点的相关配置，其中apikey是上传删除nuget包
 * 访问站点，出现如下界面，说明发布Nuget服务器成功。
 
 ![](https://allanhao.com/images/2018-12-19-09-11-30.png)
+
+## 二、发布Nuget包
+
+首先下载[Nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe)
+
+将要发布的dll和Nuget.exe 拷贝到一个独立的文件夹（例如package）,如图：
+
+![](https://allanhao.com/images/2018-12-19-09-17-52.png)
+
+然后在package目录新建文件夹lib，在lib中新建支持的.net framework目录，如net40,net45，这里我只支持net45,所以讲dll拷贝到lib\net45下，如果有支持其他famework版本的dll，可以拷贝到对应目录。
+
+![](https://allanhao.com/images/2018-12-19-09-20-47.png)
+
+
