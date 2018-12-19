@@ -72,4 +72,10 @@ Web.config中是Nuget站点的相关配置，其中apikey是上传删除nuget包
 
 ![](https://allanhao.com/images/2018-12-19-09-33-55.png)
 
+测试一下，搜索包，注意把程序包源改为自己刚建的
+
+![](https://allanhao.com/images/2018-12-19-09-35-58.png)
+
+测试成功
+
 
