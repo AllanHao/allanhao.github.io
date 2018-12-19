@@ -48,4 +48,28 @@ Web.config中是Nuget站点的相关配置，其中apikey是上传删除nuget包
 
 ![](https://allanhao.com/images/2018-12-19-09-20-47.png)
 
+在nuget.exe同级目录执行命令 nuget spec [包名称] ，如nuget spec GAIA.GIS，会生成一个nuspec文件。
+
+![](https://allanhao.com/images/2018-12-19-09-23-19.png)
+
+编辑nuspec文件，修改包的相应信息，如版本号，作者，拥有者，许可地址，项目地址，描述信息，标签等，比较简单。
+
+> 注意，如果没有依赖，可以把<dependency>节点删除
+
+![](https://allanhao.com/images/2018-12-19-09-26-44.png)
+
+修改完成后，执行nuget pack [nuspec名称]，例如 nuget pack GAIA.GIS.nuspec,则会生成包nupkg文件。
+
+![](https://allanhao.com/images/2018-12-19-09-29-26.png)
+
+将nupkg文件拷贝的服务器站点目录的Packages文件夹内就好了。
+
+## 三、使用Nuget服务器
+
+在Visual Studio中点击工具 > Nuget包管理器 > 程序包管理器设置 > 程序包源,加入一个新的程序包源的名称和地址就好了，地址就是上面发布的站点中提到的包地址。
+
+![](https://allanhao.com/images/2018-12-19-09-34-33.png)
+
+![](https://allanhao.com/images/2018-12-19-09-33-55.png)
+
 
