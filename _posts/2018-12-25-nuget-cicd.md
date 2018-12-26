@@ -69,3 +69,57 @@ Major_Version_Number.Minor_Version_Number[.Build_Number[.Revision_Number]]
 ```
 
 意思就是每次编译不管debug还是release，都会使修订版本号+1
+
+## 在Jenkins中操作
+
+> 前提操作：    
+需要下载NuGet.exe，并且把NuGet.exe所在目录和MSBuild所在目录加入到环境变量中，这样方便在Jenkins中直接使用msbuild和nuget命令。
+
+* 安装Jenkins
+
+这里不再赘述，自行百度，就是安装Java那套环境
+
+* 新建任务
+
+新建任务，起个名字，选择“构建一个自由风格的软件项目”，点击“OK”：
+![](https://allanhao.com/images/2018-12-26-09-26-46.png)
+
+* 编辑配置信息
+
+我们用的是Git管理代码，所以源代码管理里选择Git，输入仓库地址和用户名密码，选择需要拉取的分支名称：
+![](https://allanhao.com/images/2018-12-26-09-28-36.png)
+
+触发条件，可以根据自己的需求，比如每日定时调度：
+![](https://allanhao.com/images/2018-12-26-09-29-19.png)
+
+编译环境中选择编译开始前清空Workspace，保证拉取最新代码不冲突：
+![](https://allanhao.com/images/2018-12-26-09-31-14.png)
+
+编译步骤中，选择执行Windows批处理命令，主要执行如下操作：
+1.进入工程文件目录    
+2.还原所有依赖的包   
+3.执行编译Release版本     
+4.进入Releas目录     
+5.将生成的nupkg文件推送到NuGet服务器     
+6.由于生成操作修改的修订版本号，所以将修改的文件提交  
+
+代码：
+
+```bash
+cd GAIA.GIS\
+msbuild -t:restore
+msbuild /p:Configuration=Release
+cd bin\Release\
+nuget push *.nupkg -Source http://192.168.1.209:1024/nuget iwehave2305!
+git commit -a -m updateversion
+```
+
+如图 ：
+![](https://allanhao.com/images/2018-12-26-09-35-04.png)
+
+创建编译后事件，将修改记录推送到git服务器，也可以加失败邮件通知等等操作：
+![](https://allanhao.com/images/2018-12-26-09-37-03.png)
+
+保存
+
+立即构建测试一下，大功告成~
