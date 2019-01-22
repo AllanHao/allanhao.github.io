@@ -13,7 +13,7 @@ categories: [GeoServer,运维]
 
 * 下载[Java JDK 8](http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-windows-x64.exe)或者[Java JRE 8](http://download.oracle.com/otn-pub/java/jdk/8u192-b12/750e1c8617c5452694857ad95c3ee230/jre-8u192-windows-x64.exe) 安装。
 * 新增环境变量JAVA\_HOME，值为jre或者jdk所在目录。
-* 下载[Tomcat 8 zip](http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34-windows-x64.zip)到指定目录解压，如：D:\tomcat。
+* 下载[Tomcat 8 zip](http://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.zip到指定目录解压，如：D:\tomcat。
 * 修改config/tomcat-users.xml，添加或修改注释为如下代码：
 
 ```
