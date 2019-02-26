@@ -40,10 +40,10 @@ alert(b instanceof Array);  //true
 
 ```javascript
 var b = '123';
-alert(b instanceof String);  //false
-alert(typeof b);  //string
+alert(b instanceof String);//false
+alert(typeof b);//string
 var c = new String("123");
-alert(c instanceof String);  //true
+alert(c instanceof String); //true
 alert(typeof c);  //object
 ```
 
