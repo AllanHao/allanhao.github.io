@@ -8,6 +8,16 @@ keywords: docker
 
 docker 基础命令备忘
 
+## 安装与启动
+
+搜索docker源：`yum search docker`
+
+安装docker：`sudo yum install docker -y`
+ 
+启动docker：`sudo systemctl start docker`
+
+开机启动docker：`sudo systemctl enable docker`
+
 ## 镜像相关 
 
 打包镜像：进入到dockerfile目录，`docker build -t [镜像名称]`
