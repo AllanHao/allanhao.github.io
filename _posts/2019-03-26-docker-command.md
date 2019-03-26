@@ -45,3 +45,8 @@ docker 基础命令备忘
 删除当前所有容器：`docker rm $(docker ps -a -q)`
 
 进入到容器内部：`docker exec -it 9esd bash`
+
+
+## Linux相关
+
+查看ip：`ifconfig`
