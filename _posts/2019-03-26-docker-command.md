@@ -6,8 +6,9 @@ description: docker基础命令备忘
 keywords: docker
 ---
 
-## 镜像相关
---------------
+docker 基础命令备忘
+
+## 镜像相关 
 
 打包镜像：进入到dockerfile目录，`docker build -t [镜像名称]`
 
@@ -20,7 +21,6 @@ keywords: docker
 删除所有镜像：`docker rmi $(docker images)`
 
 ## 容器相关
--------------
 
 使用编排工具创建并且后台启动容器：`docker-composer -f docker-db.yml up -d`
 
