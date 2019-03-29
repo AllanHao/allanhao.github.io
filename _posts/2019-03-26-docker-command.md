@@ -46,6 +46,7 @@ docker 基础命令备忘
 
 进入到容器内部：`docker exec -it 9esd bash`
 
+将修改后的容器重新打成镜像：`docker commit -m  ""   -a  ""   [CONTAINER ID]  [给新的镜像命名]`  //-m:message -a；author
 
 ## Linux相关
 
