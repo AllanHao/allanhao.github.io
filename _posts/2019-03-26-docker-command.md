@@ -59,6 +59,10 @@ Building dependency tree       
 Reading state information... Done
 E: Unable to locate package vim 
 
-这时候需要敲：·`pt-get update`，这个命令的作用是：同步 /etc/apt/sources.list 和 /etc/apt/sources.list.d 中列出的源的索引，这样才能获取到最新的软件包。
+这时候需要敲：·`apt-get update`，这个命令的作用是：同步 /etc/apt/sources.list 和 /etc/apt/sources.list.d 中列出的源的索引，这样才能获取到最新的软件包。
 
 等更新完毕以后再敲命令：`apt-get install vim`命令即可。 
+
+复制文件夹：`\cp -rf ./geo_dir ./DockerData/` `将geo_dir文件夹复制到DockerData下，并且强制覆盖不提示`    
+
+删除文件夹：`rm -f -I wifi_traffik/` `删除wifi_traffik文件夹`
