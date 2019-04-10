@@ -74,14 +74,14 @@ permalink: /resume
 * 职责描述：基于supermap iobjects实现客流预测算法，开发地图相关功能，实现GIS数据地图初始化系统。        
 * 主要技术点：supermap iclient + iserver + iobjects
 
-### WiFi-Traffik无线客流可视化分析系统 v2.x
+### WiFi-Traffik无线客流可视化分析系统 v1.x
 
 * 项目描述：公司产品之一。系统将无线定位AP硬件设备所采集到的代码型数据以可视化进行呈现，并将客流数据转化为可分析可交互的形式，挖掘其中的商业价值。    
 * 职责描述：基于supermap iobjects实现客流预测算法，开发地图相关功能      
 * 主要技术点：supermap iclient + iserver + iobjects 
 
  
- ### 某住房拆迁安置项目（Demo）
+### 某住房拆迁安置项目（Demo）
  * 项目描述：老房拆迁，新房选房安置辅助系统
  * 职责描述：系统技术选型，需求对接，功能开发
  * 主要技术点：基于cesium js展示三维场景，三维信息拾取，编辑。
