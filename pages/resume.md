@@ -1,7 +1,9 @@
---- 
+---
+layout:  
 title: Resume
 description: 开源GIS爱好者，致力探索开源GIS生态系统
-keywords: AllanHao, 张浩 
+keywords: AllanHao, 张浩
+comments: true 
 permalink: /resume
 ---
 
@@ -25,9 +27,26 @@ permalink: /resume
 
 ---
 
+# 自我介绍
+
+拥有丰富的系统分析设计能力、面向对象分析和设计能力，熟悉常用的设计模式。熟练掌握Oracle、MySql、SqlServer等常用数据库，熟练使用MongoDB等非关系数据库。熟练掌握常用的数据结构以及算法，精通.NET、Java等常用开发语言，熟悉SpringMVC、.NET MVC等常用开发框架，精通EasyUI、Boostrap、MUI等常用Web开发框架，熟练掌握JSP、Hibernate、MyBatis、Spring、JavaScript、Ajax、JQuery等常用开发技术。
+
+目前在公司研发部门的GIS小组中带队。数据库使用MS SQL Server和PostgreSQL+PostGIS；后端主要使用SuperMap iObjects，NetTopologySuite；地图服务器使用SuperMap iServer和GeoServer；前端使用ol，turf，并基于ES6标准，使用webpack封装了一套适合公司业务的前端类库，致力于地图产品化。
+
+对开源GIS技术栈有很大兴趣，有较强的学习能力，希望找到一个致力于开源GIS研究与应用的更大的平台，对大数据量的空间分析，高并发数据查询，高效的数据呈现有更深入的研究和应用。
+
+
+
+
 # 工作经历 
 
 ## 北京嘉楼信息技术有限公司 （ 2012年7月 ~ 至今 ）
+
+* 职位：开发工程师
+* 工作描述：负责GIS前台和后端业务的相关设计，开发工作。
+负责构建公司前端地图类库，指定交互标准封装API。
+负责研究有利于公司业务发展的新技术，培养新人。
+协助研发部门其他小组开发其它业务功能。
 
 ### DEF项目 
 我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
