@@ -7,20 +7,15 @@ comments: true
 permalink: /resume
 ---
 
-
-# 联系方式 
-
-- 手机：18515662772
-- Email：allan_hao@163.com 
-
----
+ 
 
 # 个人信息
 
  - 张浩/男/1990 
- - 本科/唐山师范学院
+ - 手机：18515662772
+ - Email：allan_hao@163.com 
+ - 本科/地理信息系统
  - 工作年限：6年   
-
  - 期望职位：WEBGIS工程师
  - 期望薪资：26K-28K
  - 期望城市：北京
@@ -31,7 +26,7 @@ permalink: /resume
 
 拥有丰富的系统分析设计能力、面向对象分析和设计能力，熟悉常用的设计模式。熟练掌握Oracle、MySql、SqlServer等常用数据库，熟练使用MongoDB等非关系数据库。熟练掌握常用的数据结构以及算法，精通.NET、Java等常用开发语言，熟悉SpringMVC、.NET MVC等常用开发框架，精通EasyUI、Boostrap、MUI等常用Web开发框架，熟练掌握JSP、Hibernate、MyBatis、Spring、JavaScript、Ajax、JQuery等常用开发技术。
 
-目前在公司研发部门的GIS小组中带队。数据库使用MS SQL Server和PostgreSQL+PostGIS；后端主要使用SuperMap iObjects，NetTopologySuite；地图服务器使用SuperMap iServer和GeoServer；前端使用ol，turf，并基于ES6标准，使用webpack封装了一套适合公司业务的前端类库，致力于地图产品化。
+目前在公司研发部门的GIS小组中带队。数据库使用MS SQL Server和PostgreSQL+PostGIS；后端主要使用SuperMap iObjects，NetTopologySuite；地图服务器使用SuperMap iServer和GeoServer；基于Docker容器化部署产品；前端使用ol，turf，并基于ES6标准，使用webpack封装了一套适合公司业务的前端类库，致力于地图产品化。
 
 对开源GIS技术栈有很大兴趣，有较强的学习能力，希望找到一个致力于开源GIS研究与应用的更大的平台，对大数据量的空间分析，高并发数据查询，高效的数据呈现有更深入的研究和应用。
 
@@ -48,8 +43,8 @@ permalink: /resume
 负责研究有利于公司业务发展的新技术，培养新人。
 协助研发部门其他小组开发其它业务功能。
 
-### DEF项目 
-* 项目描述：资产管理，房地产评估系统，基于全国地图显示管理北京上海等居住楼盘信息，周边配套及公共设施，基于特定算法进行房价评估
+### WiFi-Traffik无线客流可视化分析系统 v3.x
+* 项目描述：项目简介：公司产品之一。系统将无线定位AP硬件设备所采集到的代码型数据以可视化进行呈现，并将客流数据转化为可分析可交互的形式，挖掘其中的商业价值。
 * 职责描述：负责GIS数据结构设计，业务功能实现
 * 主要技术点：NpgSQL+NTS+EF Core实现geometry类型数据的ORM，集成业务ORM平台，降低GIS开发门槛，提高开发效率。
              ES6+Webpack+ol封装前端地图API。
@@ -58,10 +53,10 @@ permalink: /resume
 
 
 ### GHI项目 wifi
-* 主要技术点：docker容器化部署，加快项目实施进度。
-             空间分析等功能采用PostgreSQL函数编程。
-             基于FME+Vue+ol+GeoServer开发地图发布系统，实现CAD到地图的自动化发布，提高项目实施效率，节约人力成本。
-             CI/CD，规范优化开发流程
+* 主要技术点：docker容器化部署，加快项目实施进度。     
+             空间分析等功能采用PostgreSQL函数编程。     
+             基于FME+Vue+ol+GeoServer开发地图发布系统，实现CAD到地图的自动化发布，提高项目实施效率，节约人力成本。     
+             CI/CD，规范优化开发流程。         
 
 
 ### 其他项目
