@@ -1,11 +1,11 @@
 ---
-layout: page
+layout:  
 title: Resume
 description: 开源GIS爱好者，致力探索开源GIS生态系统
 keywords: AllanHao, 张浩
 comments: true
 menu: 关于
-permalink: /resume/
+permalink: /resume
 ---
 
 
