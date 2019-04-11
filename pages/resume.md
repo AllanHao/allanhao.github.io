@@ -1,5 +1,5 @@
 ---
-layout:  
+layout: page
 title: Resume
 description: 开源GIS爱好者，致力探索开源GIS生态系统
 keywords: AllanHao, 张浩
@@ -8,7 +8,6 @@ permalink: /resume
 ---
 
  
-
 # 个人信息
 
  - 张浩/男/1990 
