@@ -82,3 +82,28 @@ keytool -genkeypair -alias tomcat -keyalg RSA -keypass password -storepass passw
 	keystoreFile="conf/t.keystore" keystorePass="password"
   />
 ```
+
+如果是购买的证书，可以这样配置：
+
+```xml
+    <Connector port="8453" protocol="HTTP/1.1" 
+	           SSLEnabled="true"
+			   maxPostSize="500"
+                   maxThreads="300" 
+          	   scheme="https" 
+		      secure="true"
+                URIEncoding="utf-8"
+                disableSessionTickets="true"
+		        SSLCertificateFile="ssssssss.pem"
+                   SSLCertificateKeyFile="ssssssss.key"
+	           SSLPassword="214893584410999"
+                   clientAuth="false" 
+	           sslProtocol="TLS"/>
+```
+
+修改host域名：
+
+```xml
+ <Host name="xxxx.com"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+```
