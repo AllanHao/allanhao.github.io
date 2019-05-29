@@ -55,3 +55,16 @@ const object2 = Object.assign({c: 4, d: 5}, object1);
 console.log(object2.c, object2.d);
 // expected output: 3 5
 ```
+
+## JavaScript Array Includes()
+
+includes() 方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。
+
+```javascript
+[1, 2, 3].includes(2);     // true
+[1, 2, 3].includes(4);     // false
+[1, 2, 3].includes(3, 3);  // false
+[1, 2, 3].includes(3, -1); // true
+[1, 2, NaN].includes(NaN); // true
+```
+
