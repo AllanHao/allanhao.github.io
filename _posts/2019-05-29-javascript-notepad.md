@@ -68,3 +68,17 @@ includes() 方法用来判断一个数组是否包含一个指定的值，如果
 [1, 2, NaN].includes(NaN); // true
 ```
 
+## JavaScript Array concat()
+
+concat() 方法用于连接两个或多个数组。   
+该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
+
+```javascript 
+//语法
+arrayObject.concat(arrayX,arrayX,......,arrayX)
+
+//示例
+var a = [1,2,3];
+console.log(a.concat(4,5));
+//1,2,3,4,5
+```
