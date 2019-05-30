@@ -192,6 +192,7 @@ if(a!=null&&typeof(a)!=undefined&&a!=''){
 }
 ```
 实际上我们只需要写一个判断表达：
+
 ```javascript
 if(!!a){
     //a有内容才执行的代码...  
