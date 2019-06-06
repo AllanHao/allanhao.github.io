@@ -1,8 +1,6 @@
-- name: 码志
-  url: http://mazhuang.org 
-  
 - name: ECMAScript 6 入门 
   url: http://es6.ruanyifeng.com/
 
 - name: Docker——从入门到实践
   url: https://yeasy.gitbooks.io/docker_practice/
+
