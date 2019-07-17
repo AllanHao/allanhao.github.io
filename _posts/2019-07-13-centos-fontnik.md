@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 基于CentOS7使用fontnik
+title: 基于CentOS 7使用fontnik
 categories: [Linux, MapBox]
 description: 基于CentOS7使用fontnik
 keywords: Linux, MapBox, fontnik
@@ -8,7 +8,7 @@ keywords: Linux, MapBox, fontnik
 
 Mapbox 加载矢量切片数据中字体采用的是SDF形式，所以需要将ttf等字体切成pbf文件。Mapbox团队开源了一个工具，将普通的ttf和otf字体转换成Mapbox GL渲染需要的字体的工具：[node-fontnik](https://github.com/mapbox/node-fontnik)。下面来介绍CentOS 7下安装node-fontnik
 
-## 安装centos7
+## 安装CentOS 7
 
 不管用是用虚拟机也好还是物理机也好，准备安装centos7，具体步骤这里就略了，网上有很多教程。
 
