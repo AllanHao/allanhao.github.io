@@ -22,7 +22,48 @@ Mapbox 加载矢量切片数据中字体采用的是SDF形式，所以需要将t
  mv *.repo repo_backup/
 ```
 
-2.
+2.下载ailiyun的yum源
+
+```bash
+[root@localhost ~]# wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```
+
+3.运行yum makecache生成缓存
+
+```bash
+[root@localhost ~]# yum makecache
+```
+
+4.这时候再更新系统就会看到以下mirrors.aliyun.com信息
+
+```bash
+[root@localhost ~]# yum -y update
+已加载插件：fastestmirror, refresh-packagekit, security
+设置更新进程Loading mirror speeds from cached hostfile
+* base: mirrors.aliyun.com
+* extras: mirrors.aliyun.com
+* updates: mirrors.aliyun.com
+```
+
+**关闭防火墙**
+
+1.查看防火墙状态
+
+```bash
+firewall-cmd --state
+```
+
+2.停止防火墙
+
+```bash
+systemctl stop firewalld.service
+```
+
+3.禁止防火墙开机启动
+
+```bash
+systemctl disable firewalld.service 
+```
 
 ## 安装nodejs
 
@@ -44,10 +85,29 @@ sudo yum install nodejs
 sudo yum install python
 ```
 
-fetch.js
+## 安装fontnik
+
+在用户主目录创建node-fontnik，然后初始化安装fontnik
+```bash
+cd /home/allan/
+mkdir node-fontnik
+cd node-fontnik
+npm init
+npm install fontnik
+```
+
+创建fonts目录，用于存放源ttf文件，创建结果字体目录，编写fetch.js
+
+```bash
+cd /home/allan/node-fontnik
+mkdir fonts
+mkdir yahei-pbf
+```
+
+fetch.js代码如下：
 
 ```javascript
-var fontnik = require('.');
+var fontnik = require('fontnik');
 var fs = require('fs');
 var path = require('path');
 
@@ -81,4 +141,8 @@ convert("./fonts/NotoSansHans-Light.otf", "./siyuan-pbf/Noto Sans Hans Light/");
 convert("./fonts/NotoSansHans-Medium.otf", "./siyuan-pbf/Noto Sans Hans Medium/");
 convert("./fonts/NotoSansHans-Thin-Windows.otf", "./siyuan-pbf/Noto Sans Hans Thin Windows/");
 convert("./fonts/Microsoft-YaHei.ttf", "./yahei-pbf/Microsoft YaHei/");
+
+/** 注意：fonts目录和结果目录都需要手动创建 */
 ```
+
+执行`node fetch.js`，大功告成。
