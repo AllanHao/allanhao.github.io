@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 基于Conda安装SuperSet
+title: 基于Conda安装Superset
 categories: [superset, conda]
-description: 基于Conda安装SuperSet
+description: 基于Conda安装Superset
 keywords: superset, conda
 ---
 
@@ -68,3 +68,88 @@ chmod 777 activate
 当命令行前面出现(base)的时候说明现在已经在conda的环境中了。这时候输入conda list 命令就有反应了
 
 ![](https://allanhao.com/images/2019-08-01-15-39-00.png)
+
+
+## Superset
+
+Superset 是一款由 Airbnb 开源的“现代化的企业级 BI（商业智能） Web 应用程序”，其通过创建和分享 dashboard，为数据分析提供了轻量级的数据查询和可视化方案。
+
+Superset 的前端主要用到了 React 和 NVD3/D3，而后端则基于 Python 的 Flask 框架和 Pandas、SQLAlchemy 等依赖库，主要提供了这几方面的功能：
+
+集成数据查询功能，支持多种数据库，包括 MySQL、PostgresSQL、Oracle、SQL Server、SQLite、SparkSQL 等，并深度支持 Druid。    
+通过 NVD3/D3 预定义了多种可视化图表，满足大部分的数据展示功能。如果还有其他需求，也可以自开发更多的图表类型，或者嵌入其他的 JavaScript 图表库（如 HighCharts、ECharts）。   
+提供细粒度安全模型，可以在功能层面和数据层面进行访问控制。支持多种鉴权方式（如数据库、OpenID、LDAP、OAuth、REMOTE_USER 等）。   
+
+Superset 的搭建与使用非常简单，只需要一些 Python 基础，下面先从创建虚拟环境开始。
+
+### 创建虚拟环境
+
+Superset 的依赖包较多，为了避免冲突，需要先搭建虚拟环境，再进行安装，这里推荐使用 Anaconda 自带的 conda 工具创建虚拟环境：
+
+```bash
+conda create -n superset python=3.6
+```
+
+创建虚拟环境成功后，启动虚拟环境：
+
+```bash
+activate superset
+```
+
+### 安装Superset
+
+使用豆瓣源安装 Superset：
+
+```bash
+pip install superset -i https://pypi.douban.com/simple 
+```
+
+### 初始化
+
+初始化的官方步骤如下：
+
+```bash
+# 创建管理员账号
+fabmanager create-admin --app superset 
+
+# 初始化数据库
+superset db upgrade
+
+# 载入案例数据
+superset load_examples
+
+# 初始化角色和权限
+superset init
+
+# 启动服务，端口号 8088，使用 -p 更改端口号
+superset runserver
+```
+
+### 填坑
+
+当执行上面安装命令的时候，会遇到一些错误，这里写出几个遇到的坑
+
+1.sasl/sasl.h: No such file or directory
+
+解决办法： `sudo yum -y install cyrus-sasl cyrus-sasl-devel cyrus-sasl-lib `
+
+2.Was unable to import superset Error: cannot import name '_maybe_box_datetimelike'   
+
+问题原因：这是 pandas 库版本太高导致的，需要安装低版本的 pandas 库。  
+解决办法：`pip install pandas==0.23.4`    
+出处：[https://github.com/apache/incubator-superset/issues/6770](https://github.com/apache/incubator-superset/issues/6770)   
+
+3.ImportError: No module named 'flask.exthook'
+
+问题原因：flask版本太高   
+解决办法：`pip install flask==0.12.2`   
+出处：[https://github.com/apache/incubator-superset/issues/5006](https://github.com/apache/incubator-superset/issues/5006)   
+
+4.Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity.
+
+解决办法：`use pip install sqlalchemy==1.2.18`   
+出处：[https://github.com/apache/incubator-superset/issues/6977](https://github.com/apache/incubator-superset/issues/6977)      
+
+### 完成
+
+默认端口8088，然后就可以使用开始设置的用户名密码登录了，因为刚才加载了demo数据，所以看一下demo效果。
