@@ -1,0 +1,23 @@
+<div>
+    <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+        <div>
+            <hr>
+        </div>
+        <button id="rewardButton" disable="enable"
+            onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+            <span>打赏</span>
+        </button>
+        <div id="QR" style="display: none;">
+            <div id="wechat" style="display: inline-block">
+                <a data-fancybox="group" href="/images/rewards/weixin.PNG" class="fancybox fancybox.image" rel="group"><img
+                        id="wechat_qr" src="/images/rewards/weixin.PNG" alt="huangli 微信支付"></a>
+                <p>微信支付</p>
+            </div>
+            <div id="alipay" style="display: inline-block">
+                <a data-fancybox="group" href="/images/rewards/zhifubao.png" class="fancybox fancybox.image" rel="group"><img
+                        id="alipay_qr" src="/images/rewards/zhifubao.png" alt="huangli 支付宝"></a>
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+</div>
