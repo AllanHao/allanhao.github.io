@@ -35,47 +35,63 @@ keywords: Git, 版本控制
 ## 实际常用命令实例
 
 1.本地克隆一个远程git仓库：
-git clone http://admin@git.gaiais.com:10101/r/giscenter.git
+`git clone http://admin@git.gaiais.com:10101/r/giscenter.git`
 
 2.本地拉取远程git仓库最新版本：
-git pull
+`git pull`
 
 3.本地添加所有新增文件：
-git add -A
+`git add -A`
 
-4.本地提交所有文件，附加信息
-git commit -a -m 测试提交
+4.本地提交所有文件，附加信息：
+`git commit -a -m 测试提交`
 
-5.本地推送所有提交
-git push
+5.本地推送所有提交：
+`git push`
 
-6.还原到指定版本（强制覆盖本地文件）
-git reset --hard 版本id
+6.还原到指定版本（强制覆盖本地文件）：
+`git reset --hard 版本id`
 
-7.还原到服务器最新版本（强制覆盖本地文件）
-git reset --hard HEAD
+7.还原到服务器最新版本（强制覆盖本地文件）：
+`git reset --hard HEAD`
 
-8.撤销本地修改
-git checkout . #本地所有修改的。没有的提交的，都返回到原来的状态 
-git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
-git reset --hard HASH #返回到某个节点，不保留修改。
-git reset --soft HASH #返回到某个节点。保留修改 
-git clean -df #返回到某个节点 
-git clean 参数 
--n 显示 将要 删除的 文件 和 目录 
--f 删除 文件 
--df 删除 文件 和 目录
+8.撤销本地修改：
+`git checkout . ` #本地所有修改的。没有的提交的，都返回到原来的状态。       
+`git stash ` #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。   
+`git reset --hard HASH` #返回到某个节点，不保留修改。   
+`git reset --soft HASH` #返回到某个节点。保留修改。   
+`git clean -df` #返回到某个节点。    
+`git clean [参数]`       
+-n 显示 将要 删除的 文件 和 目录     
+-f 删除 文件     
+-df 删除 文件 和 目录    
 
-9.修改远程仓库地址
-git remote set-url origin http://admin@git.gaiais.com:10101/r/giscenter.git
+9.修改远程仓库地址：
+`git remote set-url origin http://admin@git.gaiais.com:10101/r/giscenter.git`
 
+10.删除远程仓库地址：   
+`git remote rm origin`
 
-new
-切换分支：
-$ git checkout v3.2.0
-同步分支代码
-$  git branch --set-upstream-to=origin/v3.2.0 v3.2.0
-$ git pull
+11.添加远程仓库地址：
+`git remote add origin http://admin@git.gaiais.com:10101/r/giscenter.git`
+
+12.切换分支：
+`git checkout v3.2.0`
+
+13.同步分支代码：
+```bash
+git branch --set-upstream-to=origin/v3.2.0 v3.2.0
+git pull
+```
+
+14.删除远程分支：
+`git push origin --delete <branchName>`
+
+15.删除本地分支：
+`git branch -d <branchName>`
+
+16.重命名本地分支：
+`git branch -m <oldBranchName> <newBranchName>`
 
 
 ## Q&A
