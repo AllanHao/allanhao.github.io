@@ -11,10 +11,10 @@ excerpt: 本篇文章主要介绍如何查看并修改HomeBrew的源url配置
 
 ## Homebrew配置所在目录
 
-Homebrew的配置分成三个目录，分别是
-1、brew（`brew --repo`）
-2、homebrew/core（`brew --repo homebrew/core`）
-3、homebrew/cask（`brew --repo homebrew/cask`）
+Homebrew的配置分成三个目录，分别是    
+1、brew（`brew --repo`）   
+2、homebrew/core（`brew --repo homebrew/core`）   
+3、homebrew/cask（`brew --repo homebrew/cask`）   
 
 ## Homebrew查看源配置
 
