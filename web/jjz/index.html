@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>默认点标记</title>
+       <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+       <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>进京证</title>
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css"/>
     <style>
@@ -16,13 +17,13 @@
             width: 100%;
         }
 
-        .amap-icon img,
+        /* .amap-icon img,
         .amap-marker-content img {
             width: 25px;
             height: 34px;
-        }
+        } */
 
-        .marker {
+        /* .marker {
             position: absolute;
             top: -20px;
             right: -118px;
@@ -34,7 +35,7 @@
             font-family: "";
             background-color: #25A5F7;
             border-radius: 3px;
-        }
+        } */
 
         .input-card {
             top: .8rem;
@@ -95,7 +96,7 @@
             var geolocation = new AMap.Geolocation({
                 enableHighAccuracy: true, //是否使用高精度定位，默认:true
                 timeout: 10000, //超过10秒后停止定位，默认：5s
-                buttonPosition: 'RB', //定位按钮的停靠位置
+                buttonPosition: 'RT', //定位按钮的停靠位置
                 buttonOffset: new AMap.Pixel(10, 20), //定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
                 zoomToAccuracy: true, //定位成功后是否自动调整地图视野到定位点
 
@@ -129,11 +130,17 @@
         // 实例化点标记
         function addMarker(marker) {
             marker = new AMap.Marker({
-                icon: marker.aa === '2' ?
+                icon: new AMap.Icon({
+                    // size:new AMap.Size(72,72),
+                    // imageOffset:new AMap.Pixel(36,72),
+                    image: marker.aa === '2' ?
                     "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
                     "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
+                    imageSize:new AMap.Size(25,35)
+                }),
+               
                 position: marker.center, //[116.406315,39.908775],
-                offset: new AMap.Pixel(-13, -30)
+                // offset: new AMap.Pixel(-13, -30)
             });
             marker.setMap(map);
         }
@@ -181,7 +188,7 @@
         };
 
         // 绑定事件
-        map.on('click', clickHandler);
+        // map.on('click', clickHandler);
     </script>
 </body>
 
