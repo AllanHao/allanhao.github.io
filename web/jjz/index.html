@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>默认点标记</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css"/>
+    <style>
+        html,
+        body,
+        #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .amap-icon img,
+        .amap-marker-content img {
+            width: 25px;
+            height: 34px;
+        }
+
+        .marker {
+            position: absolute;
+            top: -20px;
+            right: -118px;
+            color: #fff;
+            padding: 4px 10px;
+            box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+            white-space: nowrap;
+            font-size: 12px;
+            font-family: "";
+            background-color: #25A5F7;
+            border-radius: 3px;
+        }
+
+        .input-card {
+            top: .8rem;
+            width: 18rem;
+            height: 6rem;
+            z-index: 170;
+        }
+
+        .input-card .btn {
+            margin-right: .8rem;
+        }
+
+        .input-card .btn:last-child {
+            margin-right: 0;
+        }
+        #panel {
+        position: fixed;
+        background-color: white;
+        max-height: 90%;
+        overflow-y: auto;
+        top: 10px;
+        right: 10px;
+        width: 280px;
+    }
+    #panel .amap-lib-driving {
+   	    border-radius: 4px;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="panel"></div>
+    <div id="container"></div>
+    <div class="input-card">
+        <label style="color:grey">路径规划</label>
+        <div class="input-item">
+            <input id="addMarker" type="button" class="btn" onclick="drivingPlan([117.378092,38.477422])" value="去馨苑小区">
+            <input id="updateMarker" type="button" class="btn" onclick="drivingPlan([116.2705,40.165581])"
+                value="去高教大楼">
+        </div>
+        <!-- <div class="input-item">
+        <input id="clearMarker" type="button" class="btn" onclick="clearMarker()" value="删除点标记">
+        <input id="updateMarker" type="button" class="btn" onclick="updateContent()" value="更新点标记内容">
+    </div> -->
+    </div>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fa0ec07efc91bc35d52a61d7755e8856">
+    </script>
+        <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript">
+        var marker, curPosition, driving, map = new AMap.Map("container", {
+            resizeEnable: true,
+            center: [116.397428, 39.90923],
+            zoom: 13
+        });
+
+        AMap.plugin('AMap.Geolocation', function () {
+            var geolocation = new AMap.Geolocation({
+                enableHighAccuracy: true, //是否使用高精度定位，默认:true
+                timeout: 10000, //超过10秒后停止定位，默认：5s
+                buttonPosition: 'RB', //定位按钮的停靠位置
+                buttonOffset: new AMap.Pixel(10, 20), //定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+                zoomToAccuracy: true, //定位成功后是否自动调整地图视野到定位点
+
+            });
+            map.addControl(geolocation);
+            geolocation.getCurrentPosition(function (status, result) {
+                if (status == 'complete') {
+                    // debugger
+                    curPosition = [result.position.lng, result.position.lat]
+                    // onComplete(result)
+                } else {
+                    // onError(result)
+                }
+            });
+        });
+
+        fetch('./markers.json').then(response => {
+                // debugger
+                return response.json()
+            }
+
+        ).then(data => {
+            // debugger
+            for (let index = 0; index < data.length; index++) {
+                const element = data[index];
+                addMarker(element)
+
+            }
+        })
+
+        // 实例化点标记
+        function addMarker(marker) {
+            marker = new AMap.Marker({
+                icon: marker.aa === '2' ?
+                    "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
+                    "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
+                position: marker.center, //[116.406315,39.908775],
+                offset: new AMap.Pixel(-13, -30)
+            });
+            marker.setMap(map);
+        }
+
+        function updateIcon() {
+
+            marker.setIcon('http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png')
+        }
+
+
+        // 清除 marker
+        function clearMarker() {
+            if (marker) {
+                marker.setMap(null);
+                marker = null;
+            }
+        }
+
+        AMap.plugin('AMap.Driving', function () {
+            //构造路线导航类
+            driving = new AMap.Driving({
+                map: map,
+                panel: "panel"
+            });
+        })
+
+        function drivingPlan(endPosition) {
+
+
+            // 根据起终点经纬度规划驾车导航路线
+            driving.search(new AMap.LngLat(curPosition[0], curPosition[1]), new AMap.LngLat(endPosition[0],endPosition[1]),
+                function (
+                    status, result) {
+                    // result 即是对应的驾车导航信息，相关数据结构文档请参考  https://lbs.amap.com/api/javascript-api/reference/route-search#m_DrivingResult
+                    if (status === 'complete') {
+                        // log.success('绘制驾车路线完成')
+                    } else {
+                        // log.error('获取驾车数据失败：' + result)
+                    }
+                });
+        }
+
+        var clickHandler = function (e) {
+            alert('您在[ ' + e.lnglat.getLng() + ',' + e.lnglat.getLat() + ' ]的位置点击了地图！');
+        };
+
+        // 绑定事件
+        map.on('click', clickHandler);
+    </script>
+</body>
+
+</html>
