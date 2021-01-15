@@ -70,7 +70,7 @@
 </head>
 
 <body>
-    <div id="panel"></div>
+    <!-- <div id="panel"></div> -->
     <div id="container"></div>
     <div class="input-card">
         <label style="color:grey">路径规划</label>
@@ -145,15 +145,15 @@
             marker = new AMap.Marker({
                 icon: new AMap.Icon({
                     // size:new AMap.Size(72,72),
-                    // imageOffset:new AMap.Pixel(36,72),
+                    // mageOffset:new AMap.Pixel(6,18),
                     image: marker.aa === '2' ?
                         "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
                         "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
-                    imageSize: new AMap.Size(25, 35)
+                    imageSize: new AMap.Size(12.5, 17.5)
                 }),
 
                 position: marker.center, //[116.406315,39.908775],
-                // offset: new AMap.Pixel(-13, -30)
+                offset: new AMap.Pixel(-6.25, -17.5)
             });
             marker.setMap(map);
         }
@@ -176,7 +176,9 @@
             //构造路线导航类
             driving = new AMap.Driving({
                 map: map,
-                panel: "panel"
+                // panel: "panel"
+                province:'冀',
+                number:'J532P2'
             });
         })
 
