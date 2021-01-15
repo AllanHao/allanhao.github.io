@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-       <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>进京证</title>
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
-    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css"/>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css" />
     <style>
         html,
         body,
@@ -51,19 +51,21 @@
         .input-card .btn:last-child {
             margin-right: 0;
         }
+
         #panel {
-        position: fixed;
-        background-color: white;
-        max-height: 90%;
-        overflow-y: auto;
-        top: 10px;
-        right: 10px;
-        width: 280px;
-    }
-    #panel .amap-lib-driving {
-   	    border-radius: 4px;
-        overflow: hidden;
-    }
+            position: fixed;
+            background-color: white;
+            max-height: 90%;
+            overflow-y: auto;
+            top: 10px;
+            right: 10px;
+            width: 280px;
+        }
+
+        #panel .amap-lib-driving {
+            border-radius: 4px;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -84,7 +86,8 @@
     </div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fa0ec07efc91bc35d52a61d7755e8856">
     </script>
-        <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="./markers.js"></script>
     <script type="text/javascript">
         var marker, curPosition, driving, map = new AMap.Map("container", {
             resizeEnable: true,
@@ -112,20 +115,30 @@
                 }
             });
         });
-
-        fetch('./markers.json').then(response => {
-                // debugger
-                return response.json()
-            }
-
-        ).then(data => {
-            // debugger
-            for (let index = 0; index < data.length; index++) {
-                const element = data[index];
+        // debugger
+        // console.log(markers)
+        if (markers && markers.length) {
+            for (let index = 0; index < markers.length; index++) {
+                const element = markers[index];
                 addMarker(element)
 
             }
-        })
+        }
+        // fetch('./markers.json').then(response => {
+        //         // debugger
+        //         return response.json()
+        //     }
+
+        // ).then(data => {
+        //     // debugger
+        //     for (let index = 0; index < data.length; index++) {
+        //         const element = data[index];
+        //         addMarker(element)
+
+        //     }
+        // })
+
+
 
         // 实例化点标记
         function addMarker(marker) {
@@ -134,11 +147,11 @@
                     // size:new AMap.Size(72,72),
                     // imageOffset:new AMap.Pixel(36,72),
                     image: marker.aa === '2' ?
-                    "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
-                    "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
-                    imageSize:new AMap.Size(25,35)
+                        "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
+                        "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
+                    imageSize: new AMap.Size(25, 35)
                 }),
-               
+
                 position: marker.center, //[116.406315,39.908775],
                 // offset: new AMap.Pixel(-13, -30)
             });
@@ -171,7 +184,8 @@
 
 
             // 根据起终点经纬度规划驾车导航路线
-            driving.search(new AMap.LngLat(curPosition[0], curPosition[1]), new AMap.LngLat(endPosition[0],endPosition[1]),
+            driving.search(new AMap.LngLat(curPosition[0], curPosition[1]), new AMap.LngLat(endPosition[0], endPosition[
+                    1]),
                 function (
                     status, result) {
                     // result 即是对应的驾车导航信息，相关数据结构文档请参考  https://lbs.amap.com/api/javascript-api/reference/route-search#m_DrivingResult
@@ -189,6 +203,12 @@
 
         // 绑定事件
         // map.on('click', clickHandler);
+
+        fetch('http://www.jinjing365.com/jjz/').then(response=>response.text()).then(data=>
+        {
+            debugger;
+        }
+        )
     </script>
 </body>
 
