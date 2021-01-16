@@ -102,11 +102,11 @@
                 buttonPosition: 'LB', //定位按钮的停靠位置
                 buttonOffset: new AMap.Pixel(10, 20), //定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
                 zoomToAccuracy: false, //定位成功后是否自动调整地图视野到定位点
-                panToLocation:true
+                panToLocation: true
             });
             map.addControl(geolocation);
-            setInterval(()=>{
-                geolocation.getCurrentPosition(function (status, result) {
+            // setInterval(()=>{
+            geolocation.getCurrentPosition(function (status, result) {
                 if (status == 'complete') {
                     // debugger
                     curPosition = [result.position.lng, result.position.lat]
@@ -115,8 +115,8 @@
                     // onError(result)
                 }
             });
-            },1000)
-          
+            // },1000)
+
         });
         // debugger
         // console.log(markers)
@@ -154,7 +154,7 @@
                         "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
                     imageSize: new AMap.Size(12.5, 17.5)
                 }),
-                title:marker.name,
+                title: marker.name,
                 // clickable:true,
                 position: marker.center, //[116.406315,39.908775],
                 offset: new AMap.Pixel(-6.25, -17.5)
@@ -181,8 +181,8 @@
             driving = new AMap.Driving({
                 map: map,
                 // panel: "panel"
-                province:'冀',
-                number:'J888Q2'
+                province: '冀',
+                number: 'J888Q2'
             });
         })
 
@@ -210,11 +210,9 @@
         // 绑定事件
         // map.on('click', clickHandler);
 
-        fetch('http://www.jinjing365.com/jjz/').then(response=>response.text()).then(data=>
-        {
+        fetch('http://www.jinjing365.com/jjz/').then(response => response.text()).then(data => {
             debugger;
-        }
-        )
+        })
     </script>
 </body>
 
