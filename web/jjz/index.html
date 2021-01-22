@@ -7,6 +7,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>进京证</title>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css" />
     <style>
@@ -120,12 +121,12 @@
         });
         // debugger
         // console.log(markers)
-        if (markers && markers.length) {
-            for (let index = 0; index < markers.length; index++) {
-                const element = markers[index];
-                addMarker(element)
-
+        if (capitals && capitals.length) {
+            for (let index = 0; index < capitals.length; index++) {
+                const element = capitals[index];
+                addMarker(element) 
             }
+            log.success('绘制摄像头完成【'+capitals.length+'】')
         }
         // fetch('./markers.json').then(response => {
         //         // debugger
