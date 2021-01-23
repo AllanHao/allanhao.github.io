@@ -1,4 +1,4 @@
-﻿var capitals = [{
+var capitals = [{
         adcode: "",
         center: [115.981225,40.444007],aa: "2",name: "东雪路南口至东雪路北口段",
 		text: '东雪路南口至东雪路北口段', 
