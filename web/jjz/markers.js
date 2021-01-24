@@ -1,5 +1,13 @@
 var capitals = [{
         adcode: "",
+        center: [116.451065,39.797512],aa: "2",name: "旧忠路与隆华路 西向东",
+		text: '旧忠路与隆华路 西向东', 
+		content: "<div class = 'area'>旧忠路与隆华路 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1231.html' target='_blank'title='旧忠路与隆华路 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.432733,39.804155],aa: "2",name: "旧宫东西大街与清和园小区 东向西",
+		text: '旧宫东西大街与清和园小区 东向西', 
+		content: "<div class = 'area'>旧宫东西大街与清和园小区 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1230.html' target='_blank'title='旧宫东西大街与清和园小区 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
         center: [115.981225,40.444007],aa: "2",name: "东雪路南口至东雪路北口段",
 		text: '东雪路南口至东雪路北口段', 
 		content: "<div class = 'area'>东雪路南口至东雪路北口段&nbsp;&nbsp;&nbsp;<a href='/content/?1229.html' target='_blank'title='东雪路南口至东雪路北口段' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -32,7 +40,7 @@ var capitals = [{
 		text: '黑泉路林萃桥北 南向北', 
 		content: "<div class = 'area'>黑泉路林萃桥北 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1222.html' target='_blank'title='黑泉路林萃桥北 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.432066,39.803958],aa: "1",name: "旧宫东西大街与清和园小区 西向东",
+        center: [116.43249,39.804016],aa: "2",name: "旧宫东西大街与清和园小区 西向东",
 		text: '旧宫东西大街与清和园小区 西向东', 
 		content: "<div class = 'area'>旧宫东西大街与清和园小区 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1221.html' target='_blank'title='旧宫东西大街与清和园小区 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -1440,10 +1448,6 @@ var capitals = [{
 		text: '张仪村路北口 北向南（高峰期）', 
 		content: "<div class = 'area'>张仪村路北口 北向南（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?862.html' target='_blank'title='张仪村路北口 北向南（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.462757,39.966366],aa: "1",name: "京密路太阳宫北街口东 进京（高峰期）",
-		text: '京密路太阳宫北街口东 进京（高峰期）', 
-		content: "<div class = 'area'>京密路太阳宫北街口东 进京（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?861.html' target='_blank'title='京密路太阳宫北街口东 进京（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
         center: [116.275054,39.959499],aa: "2",name: "常​青路东口 北向南 辅路",
 		text: '常​青路东口 北向南 辅路', 
 		content: "<div class = 'area'>常​青路东口 北向南 辅路&nbsp;&nbsp;&nbsp;<a href='/content/?860.html' target='_blank'title='常​青路东口 北向南 辅路' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -2020,9 +2024,9 @@ var capitals = [{
 		text: '大成路青塔路口 东向西（高峰）', 
 		content: "<div class = 'area'>大成路青塔路口 东向西（高峰）&nbsp;&nbsp;&nbsp;<a href='/content/?710.html' target='_blank'title='大成路青塔路口 东向西（高峰）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.462836,39.966373],aa: "2",name: "京密路太阳宫北街口东（高峰）",
-		text: '京密路太阳宫北街口东（高峰）', 
-		content: "<div class = 'area'>京密路太阳宫北街口东（高峰）&nbsp;&nbsp;&nbsp;<a href='/content/?708.html' target='_blank'title='京密路太阳宫北街口东（高峰）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.462825,39.966357],aa: "2",name: "京密路太阳宫北街口东 双向",
+		text: '京密路太阳宫北街口东 双向', 
+		content: "<div class = 'area'>京密路太阳宫北街口东 双向&nbsp;&nbsp;&nbsp;<a href='/content/?708.html' target='_blank'title='京密路太阳宫北街口东 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.279832,39.889543],aa: "2",name: "靛厂路锦园路北口 西向东（高峰期）",
 		text: '靛厂路锦园路北口 西向东（高峰期）', 
@@ -2164,9 +2168,9 @@ var capitals = [{
 		text: '自来水路口至圣世苑南门段', 
 		content: "<div class = 'area'>自来水路口至圣世苑南门段&nbsp;&nbsp;&nbsp;<a href='/content/?671.html' target='_blank'title='自来水路口至圣世苑南门段' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.489617,39.876566],aa: "2",name: "工大桥北过街桥南北向 南向北",
-		text: '工大桥北过街桥南北向 南向北', 
-		content: "<div class = 'area'>工大桥北过街桥南北向 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?670.html' target='_blank'title='工大桥北过街桥南北向 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.489617,39.876566],aa: "2",name: "工大桥北过街桥南北向 南北双向",
+		text: '工大桥北过街桥南北向 南北双向', 
+		content: "<div class = 'area'>工大桥北过街桥南北向 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?670.html' target='_blank'title='工大桥北过街桥南北向 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.353237,39.991522],aa: "2",name: "学院桥北 双向",
 		text: '学院桥北 双向', 
@@ -3994,8 +3998,4 @@ var capitals = [{
         adcode: "",
         center: [116.350943,40.022553],aa: "1",name: "双清路北口东向西",
 		text: '双清路北口东向西', 
-		content: "<div class = 'area'>双清路北口东向西&nbsp;&nbsp;&nbsp;<a href='/content/?148.html' target='_blank'title='双清路北口东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.353971,39.873068],aa: "1",name: "大观园西门附近南向北",
-		text: '大观园西门附近南向北', 
-		content: "<div class = 'area'>大观园西门附近南向北&nbsp;&nbsp;&nbsp;<a href='/content/?146.html' target='_blank'title='大观园西门附近南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
+		content: "<div class = 'area'>双清路北口东向西&nbsp;&nbsp;&nbsp;<a href='/content/?148.html' target='_blank'title='双清路北口东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
