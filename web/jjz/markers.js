@@ -1,5 +1,9 @@
 var capitals = [{
         adcode: "",
+        center: [116.310964,39.979374],aa: "1",name: "丹棱街与海淀中街交口 北向南 (高峰期)",
+		text: '丹棱街与海淀中街交口 北向南 (高峰期)', 
+		content: "<div class = 'area'>丹棱街与海淀中街交口 北向南 (高峰期)&nbsp;&nbsp;&nbsp;<a href='/content/?1232.html' target='_blank'title='丹棱街与海淀中街交口 北向南 (高峰期)' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
         center: [116.451065,39.797512],aa: "2",name: "旧忠路与隆华路 西向东",
 		text: '旧忠路与隆华路 西向东', 
 		content: "<div class = 'area'>旧忠路与隆华路 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1231.html' target='_blank'title='旧忠路与隆华路 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -3994,8 +3998,4 @@ var capitals = [{
         adcode: "",
         center: [116.351749,40.021706],aa: "1",name: "学清路北口南北双向",
 		text: '学清路北口南北双向', 
-		content: "<div class = 'area'>学清路北口南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?149.html' target='_blank'title='学清路北口南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.350943,40.022553],aa: "1",name: "双清路北口东向西",
-		text: '双清路北口东向西', 
-		content: "<div class = 'area'>双清路北口东向西&nbsp;&nbsp;&nbsp;<a href='/content/?148.html' target='_blank'title='双清路北口东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
+		content: "<div class = 'area'>学清路北口南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?149.html' target='_blank'title='学清路北口南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
