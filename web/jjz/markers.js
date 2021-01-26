@@ -1,5 +1,21 @@
 var capitals = [{
         adcode: "",
+        center: [116.649549,39.901318],aa: "4",name: "新仓路南口 南向北（暂不确定，待确认）",
+		text: '新仓路南口 南向北（暂不确定，待确认）', 
+		content: "<div class = 'area'>新仓路南口 南向北（暂不确定，待确认）&nbsp;&nbsp;&nbsp;<a href='/content/?1236.html' target='_blank'title='新仓路南口 南向北（暂不确定，待确认）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.450392,39.923887],aa: "1",name: "工人体育场东路东大桥路口北 南向北（高峰期）",
+		text: '工人体育场东路东大桥路口北 南向北（高峰期）', 
+		content: "<div class = 'area'>工人体育场东路东大桥路口北 南向北（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1235.html' target='_blank'title='工人体育场东路东大桥路口北 南向北（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.308506,39.97885],aa: "2",name: "丹棱街与彩和坊路交口 南向北",
+		text: '丹棱街与彩和坊路交口 南向北', 
+		content: "<div class = 'area'>丹棱街与彩和坊路交口 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1234.html' target='_blank'title='丹棱街与彩和坊路交口 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.224721,39.995751],aa: "2",name: "香山路五环出口处 西向东",
+		text: '香山路五环出口处 西向东', 
+		content: "<div class = 'area'>香山路五环出口处 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1233.html' target='_blank'title='香山路五环出口处 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
         center: [116.310964,39.979374],aa: "1",name: "丹棱街与海淀中街交口 北向南 (高峰期)",
 		text: '丹棱街与海淀中街交口 北向南 (高峰期)', 
 		content: "<div class = 'area'>丹棱街与海淀中街交口 北向南 (高峰期)&nbsp;&nbsp;&nbsp;<a href='/content/?1232.html' target='_blank'title='丹棱街与海淀中街交口 北向南 (高峰期)' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -3712,7 +3728,7 @@ var capitals = [{
 		text: '联想桥南天桥南北双向', 
 		content: "<div class = 'area'>联想桥南天桥南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?225.html' target='_blank'title='联想桥南天桥南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.400537,40.011392],aa: "2",name: "奥林东路南天桥南北双向",
+        center: [116.402393,40.018023],aa: "2",name: "奥林东路南天桥南北双向",
 		text: '奥林东路南天桥南北双向', 
 		content: "<div class = 'area'>奥林东路南天桥南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?224.html' target='_blank'title='奥林东路南天桥南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -3982,20 +3998,4 @@ var capitals = [{
         adcode: "",
         center: [116.528512,39.958603],aa: "2",name: "七棵树桥西东西双向",
 		text: '七棵树桥西东西双向', 
-		content: "<div class = 'area'>七棵树桥西东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?154.html' target='_blank'title='七棵树桥西东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.374371,39.873736],aa: "1",name: "开阳桥北天桥北向南",
-		text: '开阳桥北天桥北向南', 
-		content: "<div class = 'area'>开阳桥北天桥北向南&nbsp;&nbsp;&nbsp;<a href='/content/?153.html' target='_blank'title='开阳桥北天桥北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.416574,39.948974],aa: "1",name: "雍和宫桥南南北双向",
-		text: '雍和宫桥南南北双向', 
-		content: "<div class = 'area'>雍和宫桥南南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?151.html' target='_blank'title='雍和宫桥南南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.347711,40.021012],aa: "1",name: "双清路北培黎职业学院南北双向",
-		text: '双清路北培黎职业学院南北双向', 
-		content: "<div class = 'area'>双清路北培黎职业学院南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?150.html' target='_blank'title='双清路北培黎职业学院南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
-        center: [116.351749,40.021706],aa: "1",name: "学清路北口南北双向",
-		text: '学清路北口南北双向', 
-		content: "<div class = 'area'>学清路北口南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?149.html' target='_blank'title='学清路北口南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
+		content: "<div class = 'area'>七棵树桥西东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?154.html' target='_blank'title='七棵树桥西东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
