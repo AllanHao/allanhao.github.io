@@ -1,8 +1,164 @@
 var capitals = [{
         adcode: "",
-        center: [116.649549,39.901318],aa: "4",name: "新仓路南口 南向北（暂不确定，待确认）",
-		text: '新仓路南口 南向北（暂不确定，待确认）', 
-		content: "<div class = 'area'>新仓路南口 南向北（暂不确定，待确认）&nbsp;&nbsp;&nbsp;<a href='/content/?1236.html' target='_blank'title='新仓路南口 南向北（暂不确定，待确认）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.342092,40.068224],aa: "2",name: "龙博苑二区南侧路文博路路口 西向东",
+		text: '龙博苑二区南侧路文博路路口 西向东', 
+		content: "<div class = 'area'>龙博苑二区南侧路文博路路口 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1277.html' target='_blank'title='龙博苑二区南侧路文博路路口 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.474344,39.915842],aa: "2",name: "朝阳路人民日报社口西 东向西/西向东（潮汐车道 高峰期）",
+		text: '朝阳路人民日报社口西 东向西/西向东（潮汐车道 高峰期）', 
+		content: "<div class = 'area'>朝阳路人民日报社口西 东向西/西向东（潮汐车道 高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1276.html' target='_blank'title='朝阳路人民日报社口西 东向西/西向东（潮汐车道 高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.696461,39.886399],aa: "2",name: "​梨园南街乔庄南路路口东 东向西",
+		text: '​梨园南街乔庄南路路口东 东向西', 
+		content: "<div class = 'area'>​梨园南街乔庄南路路口东 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1275.html' target='_blank'title='​梨园南街乔庄南路路口东 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [115.981039,40.465516],aa: "2",name: "二小路口至高塔小区南门段 西向东",
+		text: '二小路口至高塔小区南门段 西向东', 
+		content: "<div class = 'area'>二小路口至高塔小区南门段 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1274.html' target='_blank'title='二小路口至高塔小区南门段 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.350832,39.883254],aa: "2",name: "枣林前街西口 西向东",
+		text: '枣林前街西口 西向东', 
+		content: "<div class = 'area'>枣林前街西口 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1273.html' target='_blank'title='枣林前街西口 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.247285,40.002795],aa: "2",name: "香山路林业学院口 东向西",
+		text: '香山路林业学院口 东向西', 
+		content: "<div class = 'area'>香山路林业学院口 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1272.html' target='_blank'title='香山路林业学院口 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.417319,39.959342],aa: "2",name: "和平里北街中段路北侧 东向西",
+		text: '和平里北街中段路北侧 东向西', 
+		content: "<div class = 'area'>和平里北街中段路北侧 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1271.html' target='_blank'title='和平里北街中段路北侧 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.443819,39.975273],aa: "2",name: "太阳宫南街西坝河路口东 西向东",
+		text: '太阳宫南街西坝河路口东 西向东', 
+		content: "<div class = 'area'>太阳宫南街西坝河路口东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1270.html' target='_blank'title='太阳宫南街西坝河路口东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.369532,39.986517],aa: "2",name: "花园东路志新桥南 南向北",
+		text: '花园东路志新桥南 南向北', 
+		content: "<div class = 'area'>花园东路志新桥南 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1269.html' target='_blank'title='花园东路志新桥南 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.555301,39.909375],aa: "2",name: "京通快速路城铁传媒大学站 东向西",
+		text: '京通快速路城铁传媒大学站 东向西', 
+		content: "<div class = 'area'>京通快速路城铁传媒大学站 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1268.html' target='_blank'title='京通快速路城铁传媒大学站 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.486684,39.988017],aa: "2",name: "京密路大山子口西 进京方向",
+		text: '京密路大山子口西 进京方向', 
+		content: "<div class = 'area'>京密路大山子口西 进京方向&nbsp;&nbsp;&nbsp;<a href='/content/?1267.html' target='_blank'title='京密路大山子口西 进京方向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.324979,39.981051],aa: "2",name: "​科学院南路与中关村南路交口  由东向西",
+		text: '​科学院南路与中关村南路交口  由东向西', 
+		content: "<div class = 'area'>​科学院南路与中关村南路交口  由东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1266.html' target='_blank'title='​科学院南路与中关村南路交口  由东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.421932,39.847371],aa: "1",name: "榴乡路石榴庄路口北 南向北",
+		text: '榴乡路石榴庄路口北 南向北', 
+		content: "<div class = 'area'>榴乡路石榴庄路口北 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1265.html' target='_blank'title='榴乡路石榴庄路口北 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.445076,39.863565],aa: "2",name: "方庄东路北桥头 由北向南",
+		text: '方庄东路北桥头 由北向南', 
+		content: "<div class = 'area'>方庄东路北桥头 由北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1264.html' target='_blank'title='方庄东路北桥头 由北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.096964,39.727714],aa: "2",name: "大件路紫草坞桥东 西向东",
+		text: '大件路紫草坞桥东 西向东', 
+		content: "<div class = 'area'>大件路紫草坞桥东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1263.html' target='_blank'title='大件路紫草坞桥东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.408606,40.157221],aa: "2",name: "立汤路马坊北桥南 主路 北向南",
+		text: '立汤路马坊北桥南 主路 北向南', 
+		content: "<div class = 'area'>立汤路马坊北桥南 主路 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1262.html' target='_blank'title='立汤路马坊北桥南 主路 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.459253,39.962183],aa: "2",name: "机场高速三元桥北（位置方向待确认）",
+		text: '机场高速三元桥北（位置方向待确认）', 
+		content: "<div class = 'area'>机场高速三元桥北（位置方向待确认）&nbsp;&nbsp;&nbsp;<a href='/content/?1261.html' target='_blank'title='机场高速三元桥北（位置方向待确认）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.324633,39.976185],aa: "1",name: "知春口 西向东（高峰期）",
+		text: '知春口 西向东（高峰期）', 
+		content: "<div class = 'area'>知春口 西向东（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1260.html' target='_blank'title='知春口 西向东（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.135637,39.739114],aa: "2",name: "良坨路口 西南向东北",
+		text: '良坨路口 西南向东北', 
+		content: "<div class = 'area'>良坨路口 西南向东北&nbsp;&nbsp;&nbsp;<a href='/content/?1259.html' target='_blank'title='良坨路口 西南向东北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.451583,39.798068],aa: "2",name: "旧忠路与隆华路 南北双向",
+		text: '旧忠路与隆华路 南北双向', 
+		content: "<div class = 'area'>旧忠路与隆华路 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1258.html' target='_blank'title='旧忠路与隆华路 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.323976,39.790893],aa: "2",name: "宏福西路与宜家北门交口 西向东",
+		text: '宏福西路与宜家北门交口 西向东', 
+		content: "<div class = 'area'>宏福西路与宜家北门交口 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1257.html' target='_blank'title='宏福西路与宜家北门交口 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.235699,39.900765],aa: "1",name: "鲁谷村路口 北向南（高峰期）",
+		text: '鲁谷村路口 北向南（高峰期）', 
+		content: "<div class = 'area'>鲁谷村路口 北向南（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1256.html' target='_blank'title='鲁谷村路口 北向南（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.45545,39.809857],aa: "2",name: "小红门路与科技路 西向东",
+		text: '小红门路与科技路 西向东', 
+		content: "<div class = 'area'>小红门路与科技路 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1255.html' target='_blank'title='小红门路与科技路 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.455357,39.813445],aa: "5",name: "小红门与宣颐路 西向东",
+		text: '小红门与宣颐路 西向东', 
+		content: "<div class = 'area'>小红门与宣颐路 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1254.html' target='_blank'title='小红门与宣颐路 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.450416,39.931536],aa: "2",name: "工人体育场东路工人体育场东门北 南向北",
+		text: '工人体育场东路工人体育场东门北 南向北', 
+		content: "<div class = 'area'>工人体育场东路工人体育场东门北 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1253.html' target='_blank'title='工人体育场东路工人体育场东门北 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [115.969998,40.461839],aa: "2",name: "杨家胡同西口至一小西口段 北向南",
+		text: '杨家胡同西口至一小西口段 北向南', 
+		content: "<div class = 'area'>杨家胡同西口至一小西口段 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1252.html' target='_blank'title='杨家胡同西口至一小西口段 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.380063,39.981774],aa: "1",name: "健翔桥南过街天桥 北向南（高峰期）",
+		text: '健翔桥南过街天桥 北向南（高峰期）', 
+		content: "<div class = 'area'>健翔桥南过街天桥 北向南（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1251.html' target='_blank'title='健翔桥南过街天桥 北向南（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.314067,40.022908],aa: "2",name: "厢白旗桥北(体大西门口) 南向北",
+		text: '厢白旗桥北(体大西门口) 南向北', 
+		content: "<div class = 'area'>厢白旗桥北(体大西门口) 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1250.html' target='_blank'title='厢白旗桥北(体大西门口) 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.418621,40.009246],aa: "5",name: "辛店路与北苑路交口东 西向东",
+		text: '辛店路与北苑路交口东 西向东', 
+		content: "<div class = 'area'>辛店路与北苑路交口东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1249.html' target='_blank'title='辛店路与北苑路交口东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.342742,39.938398],aa: "2",name: "西直门外大街北展桥下 西向东",
+		text: '西直门外大街北展桥下 西向东', 
+		content: "<div class = 'area'>西直门外大街北展桥下 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1248.html' target='_blank'title='西直门外大街北展桥下 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.461068,39.898945],aa: "2",name: "双花园南里路东口西  由西向东",
+		text: '双花园南里路东口西  由西向东', 
+		content: "<div class = 'area'>双花园南里路东口西  由西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1247.html' target='_blank'title='双花园南里路东口西  由西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.231423,40.043926],aa: "2",name: "黑龙潭路龙泉驾校路口 北向南（应为西向东）",
+		text: '黑龙潭路龙泉驾校路口 北向南（应为西向东）', 
+		content: "<div class = 'area'>黑龙潭路龙泉驾校路口 北向南（应为西向东）&nbsp;&nbsp;&nbsp;<a href='/content/?1246.html' target='_blank'title='黑龙潭路龙泉驾校路口 北向南（应为西向东）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.520581,40.016519],aa: "2",name: "机场高速7.8公里处 出京",
+		text: '机场高速7.8公里处 出京', 
+		content: "<div class = 'area'>机场高速7.8公里处 出京&nbsp;&nbsp;&nbsp;<a href='/content/?1245.html' target='_blank'title='机场高速7.8公里处 出京' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.311188,39.887337],aa: "2",name: "水口子街西口东 西向东",
+		text: '水口子街西口东 西向东', 
+		content: "<div class = 'area'>水口子街西口东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1243.html' target='_blank'title='水口子街西口东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [115.977043,40.471206],aa: "2",name: "延庆一中路口至庆园街路口段",
+		text: '延庆一中路口至庆园街路口段', 
+		content: "<div class = 'area'>延庆一中路口至庆园街路口段&nbsp;&nbsp;&nbsp;<a href='/content/?1242.html' target='_blank'title='延庆一中路口至庆园街路口段' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.001789,40.460065],aa: "2",name: "延庆日上路口至石河营东街南口段 西向东",
+		text: '延庆日上路口至石河营东街南口段 西向东', 
+		content: "<div class = 'area'>延庆日上路口至石河营东街南口段 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1241.html' target='_blank'title='延庆日上路口至石河营东街南口段 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.416158,39.957152],aa: "2",name: "和平里中街路北侧 东向西",
+		text: '和平里中街路北侧 东向西', 
+		content: "<div class = 'area'>和平里中街路北侧 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1240.html' target='_blank'title='和平里中街路北侧 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.495012,39.915579],aa: "2",name: "朝阳路慈云寺桥东  主路 西向东",
+		text: '朝阳路慈云寺桥东  主路 西向东', 
+		content: "<div class = 'area'>朝阳路慈云寺桥东  主路 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1239.html' target='_blank'title='朝阳路慈云寺桥东  主路 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.280483,40.023577],aa: "2",name: "圆明园西路农大路口北 南向北",
+		text: '圆明园西路农大路口北 南向北', 
+		content: "<div class = 'area'>圆明园西路农大路口北 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1237.html' target='_blank'title='圆明园西路农大路口北 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.649549,39.901318],aa: "2",name: "新仓路南口 南向北",
+		text: '新仓路南口 南向北', 
+		content: "<div class = 'area'>新仓路南口 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1236.html' target='_blank'title='新仓路南口 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.450392,39.923887],aa: "1",name: "工人体育场东路东大桥路口北 南向北（高峰期）",
 		text: '工人体育场东路东大桥路口北 南向北（高峰期）', 
@@ -292,9 +448,9 @@ var capitals = [{
 		text: '信息路农大南路东口南 北向南​', 
 		content: "<div class = 'area'>信息路农大南路东口南 北向南​&nbsp;&nbsp;&nbsp;<a href='/content/?1163.html' target='_blank'title='信息路农大南路东口南 北向南​' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.476376,39.978518],aa: "2",name: "京密路京密路口 西南向东北​",
-		text: '京密路京密路口 西南向东北​', 
-		content: "<div class = 'area'>京密路京密路口 西南向东北​&nbsp;&nbsp;&nbsp;<a href='/content/?1162.html' target='_blank'title='京密路京密路口 西南向东北​' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.47637,39.97859],aa: "2",name: "京密路京密路口 进出京双向",
+		text: '京密路京密路口 进出京双向', 
+		content: "<div class = 'area'>京密路京密路口 进出京双向&nbsp;&nbsp;&nbsp;<a href='/content/?1162.html' target='_blank'title='京密路京密路口 进出京双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.440083,39.976292],aa: "2",name: "太阳宫南街芍药居桥东 西向东",
 		text: '太阳宫南街芍药居桥东 西向东', 
@@ -348,9 +504,9 @@ var capitals = [{
 		text: '南菜园路口至富城宾馆路口段​', 
 		content: "<div class = 'area'>南菜园路口至富城宾馆路口段​&nbsp;&nbsp;&nbsp;<a href='/content/?1149.html' target='_blank'title='南菜园路口至富城宾馆路口段​' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.669031,39.875576],aa: "2",name: "云景南大街云景里路口东 东向西",
-		text: '云景南大街云景里路口东 东向西', 
-		content: "<div class = 'area'>云景南大街云景里路口东 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1148.html' target='_blank'title='云景南大街云景里路口东 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.669015,39.875535],aa: "2",name: "云景南大街云景里路口东 东西双向",
+		text: '云景南大街云景里路口东 东西双向', 
+		content: "<div class = 'area'>云景南大街云景里路口东 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?1148.html' target='_blank'title='云景南大街云景里路口东 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.64714,39.878322],aa: "2",name: "云景南大街九棵树西路路口东 西向东",
 		text: '云景南大街九棵树西路路口东 西向东', 
@@ -420,9 +576,9 @@ var capitals = [{
 		text: '安立路立军路东口北 南向北', 
 		content: "<div class = 'area'>安立路立军路东口北 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1130.html' target='_blank'title='安立路立军路东口北 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.446972,39.994496],aa: "2",name: "京承高速2.35公里（推断为双向，位置待确认）",
-		text: '京承高速2.35公里（推断为双向，位置待确认）', 
-		content: "<div class = 'area'>京承高速2.35公里（推断为双向，位置待确认）&nbsp;&nbsp;&nbsp;<a href='/content/?1129.html' target='_blank'title='京承高速2.35公里（推断为双向，位置待确认）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.446972,39.994496],aa: "5",name: "京承高速2.35公里 双向",
+		text: '京承高速2.35公里 双向', 
+		content: "<div class = 'area'>京承高速2.35公里 双向&nbsp;&nbsp;&nbsp;<a href='/content/?1129.html' target='_blank'title='京承高速2.35公里 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.269789,40.03566],aa: "2",name: "永丰路中国银行东门外 北向南",
 		text: '永丰路中国银行东门外 北向南', 
@@ -464,9 +620,9 @@ var capitals = [{
 		text: '翠屏西路九棵树西路路口西 南向北', 
 		content: "<div class = 'area'>翠屏西路九棵树西路路口西 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1118.html' target='_blank'title='翠屏西路九棵树西路路口西 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.190437,40.068231],aa: "2",name: "北清路稻香湖路口东 西向东",
-		text: '北清路稻香湖路口东 西向东', 
-		content: "<div class = 'area'>北清路稻香湖路口东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1117.html' target='_blank'title='北清路稻香湖路口东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.190448,40.068321],aa: "2",name: "北清路稻香湖路口东 东西双向",
+		text: '北清路稻香湖路口东 东西双向', 
+		content: "<div class = 'area'>北清路稻香湖路口东 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?1117.html' target='_blank'title='北清路稻香湖路口东 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.37317,40.029159],aa: "2",name: "黑泉路清河跨河桥南（方向位置暂未确认）",
 		text: '黑泉路清河跨河桥南（方向位置暂未确认）', 
@@ -716,9 +872,9 @@ var capitals = [{
 		text: '立汤路与定泗路交口 北向南', 
 		content: "<div class = 'area'>立汤路与定泗路交口 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1055.html' target='_blank'title='立汤路与定泗路交口 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.46077,39.887798],aa: "1",name: "垂杨柳南街东口西 西向东 （高峰期）",
-		text: '垂杨柳南街东口西 西向东 （高峰期）', 
-		content: "<div class = 'area'>垂杨柳南街东口西 西向东 （高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?1054.html' target='_blank'title='垂杨柳南街东口西 西向东 （高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.46077,39.887798],aa: "5",name: "垂杨柳南街东口 西向东",
+		text: '垂杨柳南街东口 西向东', 
+		content: "<div class = 'area'>垂杨柳南街东口 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1054.html' target='_blank'title='垂杨柳南街东口 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.340559,39.976539],aa: "2",name: "知春路铁道桥下东侧 东向西 辅路",
 		text: '知春路铁道桥下东侧 东向西 辅路', 
@@ -1288,7 +1444,7 @@ var capitals = [{
 		text: '永定路青塔桥口 东向西（高峰期）', 
 		content: "<div class = 'area'>永定路青塔桥口 东向西（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?909.html' target='_blank'title='永定路青塔桥口 东向西（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.419741,39.832815],aa: "1",name: "四环路榴乡桥 东向西 辅路(高峰期)",
+        center: [116.423857,39.832955],aa: "1",name: "四环路榴乡桥 东向西 辅路(高峰期)",
 		text: '四环路榴乡桥 东向西 辅路(高峰期)', 
 		content: "<div class = 'area'>四环路榴乡桥 东向西 辅路(高峰期)&nbsp;&nbsp;&nbsp;<a href='/content/?908.html' target='_blank'title='四环路榴乡桥 东向西 辅路(高峰期)' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -1500,9 +1656,9 @@ var capitals = [{
 		text: '万丰路吴家场路西口 北向南​ (高峰期)', 
 		content: "<div class = 'area'>万丰路吴家场路西口 北向南​ (高峰期)&nbsp;&nbsp;&nbsp;<a href='/content/?853.html' target='_blank'title='万丰路吴家场路西口 北向南​ (高峰期)' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.331229,39.777078],aa: "1",name: "兴华大街与北兴路交叉口 东向西（高峰期）",
-		text: '兴华大街与北兴路交叉口 东向西（高峰期）', 
-		content: "<div class = 'area'>兴华大街与北兴路交叉口 东向西（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?852.html' target='_blank'title='兴华大街与北兴路交叉口 东向西（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.331229,39.777078],aa: "5",name: "兴华大街与北兴路交叉口 东向西",
+		text: '兴华大街与北兴路交叉口 东向西', 
+		content: "<div class = 'area'>兴华大街与北兴路交叉口 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?852.html' target='_blank'title='兴华大街与北兴路交叉口 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.287975,40.008899],aa: "2",name: "燕北园东门至万泉河路入口 北向南",
 		text: '燕北园东门至万泉河路入口 北向南', 
@@ -1536,9 +1692,9 @@ var capitals = [{
 		text: '三元桥西北过街桥东西向  由东向西', 
 		content: "<div class = 'area'>三元桥西北过街桥东西向  由东向西&nbsp;&nbsp;&nbsp;<a href='/content/?844.html' target='_blank'title='三元桥西北过街桥东西向  由东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.466966,39.908385],aa: "2",name: "国贸桥东 西向东",
-		text: '国贸桥东 西向东', 
-		content: "<div class = 'area'>国贸桥东 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?843.html' target='_blank'title='国贸桥东 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.466966,39.908385],aa: "2",name: "国贸桥东 东西双向",
+		text: '国贸桥东 东西双向', 
+		content: "<div class = 'area'>国贸桥东 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?843.html' target='_blank'title='国贸桥东 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.343886,39.928131],aa: "1",name: "展览馆路百万庄路口 北向南（高峰期）",
 		text: '展览馆路百万庄路口 北向南（高峰期）', 
@@ -1956,9 +2112,9 @@ var capitals = [{
 		text: '五环路北苑桥西天桥 东向西', 
 		content: "<div class = 'area'>五环路北苑桥西天桥 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?734.html' target='_blank'title='五环路北苑桥西天桥 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.417471,39.978441],aa: "1",name: "惠新西街惠新西街口南 北向南 （高峰期）",
-		text: '惠新西街惠新西街口南 北向南 （高峰期）', 
-		content: "<div class = 'area'>惠新西街惠新西街口南 北向南 （高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?733.html' target='_blank'title='惠新西街惠新西街口南 北向南 （高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.417471,39.978441],aa: "5",name: "惠新西街惠新西街口南 南北双向",
+		text: '惠新西街惠新西街口南 南北双向', 
+		content: "<div class = 'area'>惠新西街惠新西街口南 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?733.html' target='_blank'title='惠新西街惠新西街口南 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.345933,39.803684],aa: "1",name: "京开高速7.1公里处 由南向北（高峰期）",
 		text: '京开高速7.1公里处 由南向北（高峰期）', 
@@ -2092,9 +2248,9 @@ var capitals = [{
 		text: '中关村2号桥 西向东（高峰期）', 
 		content: "<div class = 'area'>中关村2号桥 西向东（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?697.html' target='_blank'title='中关村2号桥 西向东（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.416513,40.009355],aa: "2",name: "北苑路辛店路路口 由南向北 /辛店路与北苑路交口东 由东向西",
-		text: '北苑路辛店路路口 由南向北 /辛店路与北苑路交口东 由东向西', 
-		content: "<div class = 'area'>北苑路辛店路路口 由南向北 /辛店路与北苑路交口东 由东向西&nbsp;&nbsp;&nbsp;<a href='/content/?696.html' target='_blank'title='北苑路辛店路路口 由南向北 /辛店路与北苑路交口东 由东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.416513,40.009355],aa: "2",name: "北苑路辛店路路口 由南向北",
+		text: '北苑路辛店路路口 由南向北', 
+		content: "<div class = 'area'>北苑路辛店路路口 由南向北&nbsp;&nbsp;&nbsp;<a href='/content/?696.html' target='_blank'title='北苑路辛店路路口 由南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.40117,39.989766],aa: "2",name: "北辰东桥北",
 		text: '北辰东桥北', 
@@ -2396,9 +2552,9 @@ var capitals = [{
 		text: '中关村环岛南向北', 
 		content: "<div class = 'area'>中关村环岛南向北&nbsp;&nbsp;&nbsp;<a href='/content/?613.html' target='_blank'title='中关村环岛南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.657933,39.828311],aa: "2",name: "九德路台湖南口南 南向北",
-		text: '九德路台湖南口南 南向北', 
-		content: "<div class = 'area'>九德路台湖南口南 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?612.html' target='_blank'title='九德路台湖南口南 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.657933,39.828311],aa: "2",name: "九德路台湖南口南 南北双向",
+		text: '九德路台湖南口南 南北双向', 
+		content: "<div class = 'area'>九德路台湖南口南 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?612.html' target='_blank'title='九德路台湖南口南 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.705254,39.936803],aa: "2",name: "京榆旧路六合桥西 东西双向",
 		text: '京榆旧路六合桥西 东西双向', 
@@ -2480,9 +2636,9 @@ var capitals = [{
 		text: '航天桥东过街天桥 西向东', 
 		content: "<div class = 'area'>航天桥东过街天桥 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?592.html' target='_blank'title='航天桥东过街天桥 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.352252,39.831083],aa: "2",name: "马家楼桥东过街桥外环主路",
-		text: '马家楼桥东过街桥外环主路', 
-		content: "<div class = 'area'>马家楼桥东过街桥外环主路&nbsp;&nbsp;&nbsp;<a href='/content/?591.html' target='_blank'title='马家楼桥东过街桥外环主路' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.352252,39.831083],aa: "2",name: "马家楼桥东过街桥外环/外环主路 双向",
+		text: '马家楼桥东过街桥外环/外环主路 双向', 
+		content: "<div class = 'area'>马家楼桥东过街桥外环/外环主路 双向&nbsp;&nbsp;&nbsp;<a href='/content/?591.html' target='_blank'title='马家楼桥东过街桥外环/外环主路 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.325225,39.830611],aa: "2",name: "花乡桥东过街桥双向主路",
 		text: '花乡桥东过街桥双向主路', 
@@ -2776,7 +2932,7 @@ var capitals = [{
 		text: '三环路和平西桥东东向西', 
 		content: "<div class = 'area'>三环路和平西桥东东向西&nbsp;&nbsp;&nbsp;<a href='/content/?514.html' target='_blank'title='三环路和平西桥东东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.461992,39.94126],aa: "2",name: "三环辅路农展桥南向北",
+        center: [116.461981,39.940931],aa: "2",name: "三环辅路农展桥南向北",
 		text: '三环辅路农展桥南向北', 
 		content: "<div class = 'area'>三环辅路农展桥南向北&nbsp;&nbsp;&nbsp;<a href='/content/?513.html' target='_blank'title='三环辅路农展桥南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -2840,9 +2996,9 @@ var capitals = [{
 		text: '博兴三路新凤河路口北向南（辅路）', 
 		content: "<div class = 'area'>博兴三路新凤河路口北向南（辅路）&nbsp;&nbsp;&nbsp;<a href='/content/?496.html' target='_blank'title='博兴三路新凤河路口北向南（辅路）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.30951,39.763241],aa: "2",name: "兴旺路与金星路路口南向北和西向东",
-		text: '兴旺路与金星路路口南向北和西向东', 
-		content: "<div class = 'area'>兴旺路与金星路路口南向北和西向东&nbsp;&nbsp;&nbsp;<a href='/content/?495.html' target='_blank'title='兴旺路与金星路路口南向北和西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.30951,39.763241],aa: "2",name: "兴旺路与金星路路口南向北和东西双向",
+		text: '兴旺路与金星路路口南向北和东西双向', 
+		content: "<div class = 'area'>兴旺路与金星路路口南向北和东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?495.html' target='_blank'title='兴旺路与金星路路口南向北和东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.459118,39.8935],aa: "2",name: "双井桥西天桥 东西双向",
 		text: '双井桥西天桥 东西双向', 
@@ -3332,10 +3488,6 @@ var capitals = [{
 		text: '黄马路与团桂路刘二村口 东西双向', 
 		content: "<div class = 'area'>黄马路与团桂路刘二村口 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?340.html' target='_blank'title='黄马路与团桂路刘二村口 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.445204,39.859637],aa: "1",name: "方庄东路三环内",
-		text: '方庄东路三环内', 
-		content: "<div class = 'area'>方庄东路三环内&nbsp;&nbsp;&nbsp;<a href='/content/?339.html' target='_blank'title='方庄东路三环内' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
-        adcode: "",
         center: [116.211387,39.916642],aa: "1",name: "五环主路五景桥双向",
 		text: '五环主路五景桥双向', 
 		content: "<div class = 'area'>五环主路五景桥双向&nbsp;&nbsp;&nbsp;<a href='/content/?337.html' target='_blank'title='五环主路五景桥双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -3496,11 +3648,11 @@ var capitals = [{
 		text: '五环路五元桥南双向', 
 		content: "<div class = 'area'>五环路五元桥南双向&nbsp;&nbsp;&nbsp;<a href='/content/?291.html' target='_blank'title='五环路五元桥南双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.097064,39.727734],aa: "2",name: "大件路紫草坞桥东 东向西",
+        center: [116.097048,39.727812],aa: "2",name: "大件路紫草坞桥东 东向西",
 		text: '大件路紫草坞桥东 东向西', 
 		content: "<div class = 'area'>大件路紫草坞桥东 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?290.html' target='_blank'title='大件路紫草坞桥东 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.543219,39.922315],aa: "5",name: "五环主路白家楼桥南（五环13公里800米处 高峰期）双向",
+        center: [116.543219,39.922315],aa: "2",name: "五环主路白家楼桥南（五环13公里800米处 高峰期）双向",
 		text: '五环主路白家楼桥南（五环13公里800米处 高峰期）双向', 
 		content: "<div class = 'area'>五环主路白家楼桥南（五环13公里800米处 高峰期）双向&nbsp;&nbsp;&nbsp;<a href='/content/?289.html' target='_blank'title='五环主路白家楼桥南（五环13公里800米处 高峰期）双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -3544,9 +3696,9 @@ var capitals = [{
 		text: '五环大羊坊桥西天桥 双向', 
 		content: "<div class = 'area'>五环大羊坊桥西天桥 双向&nbsp;&nbsp;&nbsp;<a href='/content/?275.html' target='_blank'title='五环大羊坊桥西天桥 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.461683,39.929507],aa: "1",name: "三环长虹桥南过街桥外环",
-		text: '三环长虹桥南过街桥外环', 
-		content: "<div class = 'area'>三环长虹桥南过街桥外环&nbsp;&nbsp;&nbsp;<a href='/content/?274.html' target='_blank'title='三环长虹桥南过街桥外环' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.461683,39.929507],aa: "1",name: "三环长虹桥南过街桥 双向",
+		text: '三环长虹桥南过街桥 双向', 
+		content: "<div class = 'area'>三环长虹桥南过街桥 双向&nbsp;&nbsp;&nbsp;<a href='/content/?274.html' target='_blank'title='三环长虹桥南过街桥 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.446647,39.845862],aa: "1",name: "成寿寺成仪路东口 北向南 西向东",
 		text: '成寿寺成仪路东口 北向南 西向东', 
@@ -3696,9 +3848,9 @@ var capitals = [{
 		text: '西三环丰益桥南过街桥外环主路', 
 		content: "<div class = 'area'>西三环丰益桥南过街桥外环主路&nbsp;&nbsp;&nbsp;<a href='/content/?234.html' target='_blank'title='西三环丰益桥南过街桥外环主路' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.444338,39.858895],aa: "2",name: "方庄桥东过街桥内环（含辅路）",
-		text: '方庄桥东过街桥内环（含辅路）', 
-		content: "<div class = 'area'>方庄桥东过街桥内环（含辅路）&nbsp;&nbsp;&nbsp;<a href='/content/?233.html' target='_blank'title='方庄桥东过街桥内环（含辅路）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.444338,39.858895],aa: "2",name: "方庄桥东过街桥内环 双向 主辅路均有",
+		text: '方庄桥东过街桥内环 双向 主辅路均有', 
+		content: "<div class = 'area'>方庄桥东过街桥内环 双向 主辅路均有&nbsp;&nbsp;&nbsp;<a href='/content/?233.html' target='_blank'title='方庄桥东过街桥内环 双向 主辅路均有' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.449977,39.953701],aa: "1",name: "机场高速三元桥南天桥双向",
 		text: '机场高速三元桥南天桥双向', 
@@ -3824,7 +3976,7 @@ var capitals = [{
 		text: '陶然桥北南北双向', 
 		content: "<div class = 'area'>陶然桥北南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?199.html' target='_blank'title='陶然桥北南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.535767,39.916529],aa: "2",name: "大黄庄桥西天桥 双向",
+        center: [116.539769,39.916233],aa: "5",name: "大黄庄桥西天桥 双向",
 		text: '大黄庄桥西天桥 双向', 
 		content: "<div class = 'area'>大黄庄桥西天桥 双向&nbsp;&nbsp;&nbsp;<a href='/content/?198.html' target='_blank'title='大黄庄桥西天桥 双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -3998,4 +4150,72 @@ var capitals = [{
         adcode: "",
         center: [116.528512,39.958603],aa: "2",name: "七棵树桥西东西双向",
 		text: '七棵树桥西东西双向', 
-		content: "<div class = 'area'>七棵树桥西东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?154.html' target='_blank'title='七棵树桥西东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
+		content: "<div class = 'area'>七棵树桥西东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?154.html' target='_blank'title='七棵树桥西东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.374371,39.873736],aa: "1",name: "开阳桥北天桥北向南",
+		text: '开阳桥北天桥北向南', 
+		content: "<div class = 'area'>开阳桥北天桥北向南&nbsp;&nbsp;&nbsp;<a href='/content/?153.html' target='_blank'title='开阳桥北天桥北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.416574,39.948974],aa: "1",name: "雍和宫桥南南北双向",
+		text: '雍和宫桥南南北双向', 
+		content: "<div class = 'area'>雍和宫桥南南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?151.html' target='_blank'title='雍和宫桥南南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.347711,40.021012],aa: "1",name: "双清路北培黎职业学院南北双向",
+		text: '双清路北培黎职业学院南北双向', 
+		content: "<div class = 'area'>双清路北培黎职业学院南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?150.html' target='_blank'title='双清路北培黎职业学院南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.351706,40.021281],aa: "2",name: "学清路 北向南",
+		text: '学清路 北向南', 
+		content: "<div class = 'area'>学清路 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?149.html' target='_blank'title='学清路 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.350943,40.022553],aa: "1",name: "双清路北口东向西",
+		text: '双清路北口东向西', 
+		content: "<div class = 'area'>双清路北口东向西&nbsp;&nbsp;&nbsp;<a href='/content/?148.html' target='_blank'title='双清路北口东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.353971,39.873068],aa: "1",name: "大观园西门附近南向北",
+		text: '大观园西门附近南向北', 
+		content: "<div class = 'area'>大观园西门附近南向北&nbsp;&nbsp;&nbsp;<a href='/content/?146.html' target='_blank'title='大观园西门附近南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.317528,40.016417],aa: "5",name: "厢白旗桥南南北双向",
+		text: '厢白旗桥南南北双向', 
+		content: "<div class = 'area'>厢白旗桥南南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?145.html' target='_blank'title='厢白旗桥南南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.349342,39.877585],aa: "1",name: "白纸坊桥下东西双向",
+		text: '白纸坊桥下东西双向', 
+		content: "<div class = 'area'>白纸坊桥下东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?144.html' target='_blank'title='白纸坊桥下东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.31476,39.940434],aa: "1",name: "紫竹桥东天桥东西双向",
+		text: '紫竹桥东天桥东西双向', 
+		content: "<div class = 'area'>紫竹桥东天桥东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?143.html' target='_blank'title='紫竹桥东天桥东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.322761,39.960925],aa: "1",name: "四通桥南天桥南北双向",
+		text: '四通桥南天桥南北双向', 
+		content: "<div class = 'area'>四通桥南天桥南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?142.html' target='_blank'title='四通桥南天桥南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.535707,39.923519],aa: "2",name: "白家楼桥西人行过街灯  东西双向",
+		text: '白家楼桥西人行过街灯  东西双向', 
+		content: "<div class = 'area'>白家楼桥西人行过街灯  东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?141.html' target='_blank'title='白家楼桥西人行过街灯  东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.408451,40.020972],aa: "2",name: "仰山桥南 南北双向（包括主路北向南）",
+		text: '仰山桥南 南北双向（包括主路北向南）', 
+		content: "<div class = 'area'>仰山桥南 南北双向（包括主路北向南）&nbsp;&nbsp;&nbsp;<a href='/content/?140.html' target='_blank'title='仰山桥南 南北双向（包括主路北向南）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.43363,39.936703],aa: "1",name: "海运仓胡同东口东西双向",
+		text: '海运仓胡同东口东西双向', 
+		content: "<div class = 'area'>海运仓胡同东口东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?139.html' target='_blank'title='海运仓胡同东口东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.538814,39.869348],aa: "2",name: "京哈五方桥西/京哈高速4公里 双向 主辅路",
+		text: '京哈五方桥西/京哈高速4公里 双向 主辅路', 
+		content: "<div class = 'area'>京哈五方桥西/京哈高速4公里 双向 主辅路&nbsp;&nbsp;&nbsp;<a href='/content/?138.html' target='_blank'title='京哈五方桥西/京哈高速4公里 双向 主辅路' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.357763,40.017804],aa: "2",name: "京藏高速上清桥南天桥 北向南",
+		text: '京藏高速上清桥南天桥 北向南', 
+		content: "<div class = 'area'>京藏高速上清桥南天桥 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?136.html' target='_blank'title='京藏高速上清桥南天桥 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.416863,40.015443],aa: "2",name: "北苑路康斯丹郡南北双向",
+		text: '北苑路康斯丹郡南北双向', 
+		content: "<div class = 'area'>北苑路康斯丹郡南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?135.html' target='_blank'title='北苑路康斯丹郡南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.374476,40.020312],aa: "2",name: "林萃桥南南北双向",
+		text: '林萃桥南南北双向', 
+		content: "<div class = 'area'>林萃桥南南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?133.html' target='_blank'title='林萃桥南南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"}]
