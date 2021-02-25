@@ -1,5 +1,57 @@
 var capitals = [{
         adcode: "",
+        center: [116.545272,39.745584],aa: "2",name: "漷马路马驹桥南 南向北（实际为北向南）",
+		text: '漷马路马驹桥南 南向北（实际为北向南）', 
+		content: "<div class = 'area'>漷马路马驹桥南 南向北（实际为北向南）&nbsp;&nbsp;&nbsp;<a href='/content/?1321.html' target='_blank'title='漷马路马驹桥南 南向北（实际为北向南）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.412359,39.766723],aa: "2",name: "饮鹿池桥西路口 南北双向",
+		text: '饮鹿池桥西路口 南北双向', 
+		content: "<div class = 'area'>饮鹿池桥西路口 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1320.html' target='_blank'title='饮鹿池桥西路口 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.41392,40.059174],aa: "2",name: "立汤路与中东路路口北150米 南向北",
+		text: '立汤路与中东路路口北150米 南向北', 
+		content: "<div class = 'area'>立汤路与中东路路口北150米 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1319.html' target='_blank'title='立汤路与中东路路口北150米 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.736085,39.914874],aa: "2",name: "通济路与潞源北街交口 北向南",
+		text: '通济路与潞源北街交口 北向南', 
+		content: "<div class = 'area'>通济路与潞源北街交口 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1318.html' target='_blank'title='通济路与潞源北街交口 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.751465,39.872589],aa: "2",name: "云帆路银枫秋实东门 南北双向",
+		text: '云帆路银枫秋实东门 南北双向', 
+		content: "<div class = 'area'>云帆路银枫秋实东门 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1317.html' target='_blank'title='云帆路银枫秋实东门 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.267728,39.834415],aa: "2",name: "看丹南路前街西公交站 西向东",
+		text: '看丹南路前街西公交站 西向东', 
+		content: "<div class = 'area'>看丹南路前街西公交站 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1316.html' target='_blank'title='看丹南路前街西公交站 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.444742,40.159992],aa: "2",name: "赴沟路北六环南侧100米 由南向北",
+		text: '赴沟路北六环南侧100米 由南向北', 
+		content: "<div class = 'area'>赴沟路北六环南侧100米 由南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1315.html' target='_blank'title='赴沟路北六环南侧100米 由南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.267401,40.143646],aa: "2",name: "百沙路路庄桥东300米 由西向东",
+		text: '百沙路路庄桥东300米 由西向东', 
+		content: "<div class = 'area'>百沙路路庄桥东300米 由西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1314.html' target='_blank'title='百沙路路庄桥东300米 由西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.728414,39.68141],aa: "2",name: "张凤路与柏德路交口 西向东​",
+		text: '张凤路与柏德路交口 西向东​', 
+		content: "<div class = 'area'>张凤路与柏德路交口 西向东​&nbsp;&nbsp;&nbsp;<a href='/content/?1313.html' target='_blank'title='张凤路与柏德路交口 西向东​' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.759331,39.900778],aa: "2",name: "运河东大街东段 东向西",
+		text: '运河东大街东段 东向西', 
+		content: "<div class = 'area'>运河东大街东段 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1312.html' target='_blank'title='运河东大街东段 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.468013,40.118166],aa: "2",name: "未来科学城路与未来科学城大道路口 南向北",
+		text: '未来科学城路与未来科学城大道路口 南向北', 
+		content: "<div class = 'area'>未来科学城路与未来科学城大道路口 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1311.html' target='_blank'title='未来科学城路与未来科学城大道路口 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.30826,40.175602],aa: "2",name: "流研所路六环桥南100米 北向南",
+		text: '流研所路六环桥南100米 北向南', 
+		content: "<div class = 'area'>流研所路六环桥南100米 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1310.html' target='_blank'title='流研所路六环桥南100米 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
+        center: [116.321638,40.067062],aa: "2",name: "南店北路与G6辅路路口东100米 西向东",
+		text: '南店北路与G6辅路路口东100米 西向东', 
+		content: "<div class = 'area'>南店北路与G6辅路路口东100米 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1309.html' target='_blank'title='南店北路与G6辅路路口东100米 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        adcode: "",
         center: [116.433566,39.941484],aa: "2",name: "东直门桥 南向北辅路",
 		text: '东直门桥 南向北辅路', 
 		content: "<div class = 'area'>东直门桥 南向北辅路&nbsp;&nbsp;&nbsp;<a href='/content/?1308.html' target='_blank'title='东直门桥 南向北辅路' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
@@ -32,15 +84,15 @@ var capitals = [{
 		text: '玉河南路东玉河桥东侧300米 西向东', 
 		content: "<div class = 'area'>玉河南路东玉河桥东侧300米 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1301.html' target='_blank'title='玉河南路东玉河桥东侧300米 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.427278,40.062412],aa: "2",name: "太平庄东路与中滩村北三街路口南200米 北向南",
-		text: '太平庄东路与中滩村北三街路口南200米 北向南', 
-		content: "<div class = 'area'>太平庄东路与中滩村北三街路口南200米 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1300.html' target='_blank'title='太平庄东路与中滩村北三街路口南200米 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.427278,40.062412],aa: "2",name: "太平庄东路与中滩村北三街路口南200米 南北双向",
+		text: '太平庄东路与中滩村北三街路口南200米 南北双向', 
+		content: "<div class = 'area'>太平庄东路与中滩村北三街路口南200米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1300.html' target='_blank'title='太平庄东路与中滩村北三街路口南200米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.228224,40.16832],aa: "2",name: "顺沙路马池口东桥 东西双向",
 		text: '顺沙路马池口东桥 东西双向', 
 		content: "<div class = 'area'>顺沙路马池口东桥 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?1299.html' target='_blank'title='顺沙路马池口东桥 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.165235,40.128907],aa: "2",name: "沙阳路京新高速东侧500米 西向东",
+        center: [116.246506,40.121228],aa: "2",name: "沙阳路京新高速东侧500米 西向东",
 		text: '沙阳路京新高速东侧500米 西向东', 
 		content: "<div class = 'area'>沙阳路京新高速东侧500米 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1298.html' target='_blank'title='沙阳路京新高速东侧500米 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -48,13 +100,13 @@ var capitals = [{
 		text: '秦尚路官牛坊桥南侧100米 南北双向', 
 		content: "<div class = 'area'>秦尚路官牛坊桥南侧100米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1297.html' target='_blank'title='秦尚路官牛坊桥南侧100米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.466865,40.157392],aa: "2",name: "秦北路北六环以南100米 北向南",
-		text: '秦北路北六环以南100米 北向南', 
-		content: "<div class = 'area'>秦北路北六环以南100米 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1296.html' target='_blank'title='秦北路北六环以南100米 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.466865,40.157392],aa: "2",name: "秦北路北六环以南100米 南北双向",
+		text: '秦北路北六环以南100米 南北双向', 
+		content: "<div class = 'area'>秦北路北六环以南100米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1296.html' target='_blank'title='秦北路北六环以南100米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.437605,40.08077],aa: "2",name: "七星路与太平庄北街路口北100米 北向南",
-		text: '七星路与太平庄北街路口北100米 北向南', 
-		content: "<div class = 'area'>七星路与太平庄北街路口北100米 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1295.html' target='_blank'title='七星路与太平庄北街路口北100米 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.437605,40.08077],aa: "2",name: "七星路与太平庄北街路口北100米 南北双向",
+		text: '七星路与太平庄北街路口北100米 南北双向', 
+		content: "<div class = 'area'>七星路与太平庄北街路口北100米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1295.html' target='_blank'title='七星路与太平庄北街路口北100米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.227373,40.144289],aa: "2",name: "满白路西坨桥东侧100米 东西双向",
 		text: '满白路西坨桥东侧100米 东西双向', 
@@ -64,21 +116,21 @@ var capitals = [{
 		text: '龙禧二街龙禧二街与G6辅路路口东100米 西向东', 
 		content: "<div class = 'area'>龙禧二街龙禧二街与G6辅路路口东100米 西向东&nbsp;&nbsp;&nbsp;<a href='/content/?1293.html' target='_blank'title='龙禧二街龙禧二街与G6辅路路口东100米 西向东' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.409239,40.056876],aa: "2",name: "立水桥西路与中东路路口南200米 南向北",
-		text: '立水桥西路与中东路路口南200米 南向北', 
-		content: "<div class = 'area'>立水桥西路与中东路路口南200米 南向北&nbsp;&nbsp;&nbsp;<a href='/content/?1292.html' target='_blank'title='立水桥西路与中东路路口南200米 南向北' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.409239,40.056876],aa: "2",name: "立水桥西路与中东路路口南200米 南北双向",
+		text: '立水桥西路与中东路路口南200米 南北双向', 
+		content: "<div class = 'area'>立水桥西路与中东路路口南200米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1292.html' target='_blank'title='立水桥西路与中东路路口南200米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.335516,40.097147],aa: "2",name: "文华西路与北清路路口南200米 南北双向",
 		text: '文华西路与北清路路口南200米 南北双向', 
 		content: "<div class = 'area'>文华西路与北清路路口南200米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1291.html' target='_blank'title='文华西路与北清路路口南200米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.347575,40.080551],aa: "2",name: "回龙观政府路镇政府东侧 东向西",
-		text: '回龙观政府路镇政府东侧 东向西', 
-		content: "<div class = 'area'>回龙观政府路镇政府东侧 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1290.html' target='_blank'title='回龙观政府路镇政府东侧 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.324877,40.064186],aa: "2",name: "回龙观政府路镇政府东侧 东西双向",
+		text: '回龙观政府路镇政府东侧 东西双向', 
+		content: "<div class = 'area'>回龙观政府路镇政府东侧 东西双向&nbsp;&nbsp;&nbsp;<a href='/content/?1290.html' target='_blank'title='回龙观政府路镇政府东侧 东西双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.365174,40.089586],aa: "2",name: "黄平路与龙锦一街路口南100米 北向南",
-		text: '黄平路与龙锦一街路口南100米 北向南', 
-		content: "<div class = 'area'>黄平路与龙锦一街路口南100米 北向南&nbsp;&nbsp;&nbsp;<a href='/content/?1289.html' target='_blank'title='黄平路与龙锦一街路口南100米 北向南' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.365174,40.089586],aa: "2",name: "黄平路与龙锦一街路口南100米 南北双向",
+		text: '黄平路与龙锦一街路口南100米 南北双向', 
+		content: "<div class = 'area'>黄平路与龙锦一街路口南100米 南北双向&nbsp;&nbsp;&nbsp;<a href='/content/?1289.html' target='_blank'title='黄平路与龙锦一街路口南100米 南北双向' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.38915,40.056702],aa: "2",name: "东小口森林公园北门西侧500米 东西双向",
 		text: '东小口森林公园北门西侧500米 东西双向', 
@@ -92,7 +144,7 @@ var capitals = [{
 		text: '英才北三街与未来科学城东路路口西100米 东向西', 
 		content: "<div class = 'area'>英才北三街与未来科学城东路路口西100米 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1286.html' target='_blank'title='英才北三街与未来科学城东路路口西100米 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.482906,40.105871],aa: "2",name: "定泗路鲁疃桥西 东向西",
+        center: [116.482268,40.108608],aa: "2",name: "定泗路鲁疃桥西 东向西",
 		text: '定泗路鲁疃桥西 东向西', 
 		content: "<div class = 'area'>定泗路鲁疃桥西 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?1285.html' target='_blank'title='定泗路鲁疃桥西 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
@@ -1652,9 +1704,9 @@ var capitals = [{
 		text: '北坞村路与闵庄路交口南侧 南向北（高峰期）', 
 		content: "<div class = 'area'>北坞村路与闵庄路交口南侧 南向北（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?886.html' target='_blank'title='北坞村路与闵庄路交口南侧 南向北（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
-        center: [116.267917,39.969829],aa: "1",name: "北坞村路四海桥西​ 东向西（高峰期）",
-		text: '北坞村路四海桥西​ 东向西（高峰期）', 
-		content: "<div class = 'area'>北坞村路四海桥西​ 东向西（高峰期）&nbsp;&nbsp;&nbsp;<a href='/content/?885.html' target='_blank'title='北坞村路四海桥西​ 东向西（高峰期）' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
+        center: [116.267917,39.969829],aa: "5",name: "北坞村路四海桥西​ 东向西",
+		text: '北坞村路四海桥西​ 东向西', 
+		content: "<div class = 'area'>北坞村路四海桥西​ 东向西&nbsp;&nbsp;&nbsp;<a href='/content/?885.html' target='_blank'title='北坞村路四海桥西​ 东向西' class='foot-nav' target='_self'>[详细信息]</a></div>"},{
         adcode: "",
         center: [116.235759,39.907589],aa: "1",name: "石景山八宝山路口 南向北（高峰期）",
 		text: '石景山八宝山路口 南向北（高峰期）', 
