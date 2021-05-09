@@ -165,6 +165,8 @@
             });
             // },1000)
 
+            geolocation.watchPosition( )
+
         });
         // debugger
         // console.log(markers)
@@ -253,7 +255,7 @@
                         //     origin:result.origin,
                         //     destination:result.destination
                         // });
-                        // log.success('绘制驾车路线完成')
+                        log.success('规划完成，距离' + (result.routes[0].distance / 1000).toFixed(2) + "公里，耗时" + (result.routes[0].time / 60).toFixed(0) + "分钟")
                     } else {
                         // log.error('获取驾车数据失败：' + result)
                     }
