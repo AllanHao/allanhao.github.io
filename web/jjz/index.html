@@ -272,7 +272,10 @@
                         //     origin:result.origin,
                         //     destination:result.destination
                         // });
-                        log.success('规划完成，距离' + (result.routes[0].distance / 1000).toFixed(2) + "公里，耗时" + (result.routes[0].time / 60).toFixed(0) + "分钟")
+                        var distance = (result.routes[0].distance / 1000).toFixed(2);
+                        var minutes = (result.routes[0].time / 60).toFixed(0);
+                        var totalTime = minutes > 60 ? parseInt(minutes / 60) + "小时" + (minutes % 60 > 0 ? minutes % 60 + "分钟" : "") : minutes + "分钟";
+                        log.success('规划完成，距离' + distance + "公里，耗时" + totalTime);
                     } else {
                         // log.error('获取驾车数据失败：' + result)
                     }
