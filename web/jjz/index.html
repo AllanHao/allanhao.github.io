@@ -53,7 +53,7 @@
         .input-card {
             top: .8rem;
             width: 22rem;
-            height: 8rem;
+            height: 12rem;
             z-index: 170;
         }
 
@@ -102,16 +102,25 @@
             <input type="button" class="btn" onclick="setEnd([116.237925,40.076463])" value="辰安科技">
         </div>
         <input type="button" class="btn" onclick="drivingPlan()" value="开始规划">
+
+        <hr style="margin:0px;height:.1rem;border:0px;background-color:#D5D5D5;color:#D5D5D5;margin-top: 0.4rem;"/>
+        <div class="input-item" style="justify-content: center; ">
+            
+            <input type="button" class="btn" onclick="drawPolygon()" value="绘制不可达区域">
+            <input type="button" class="btn" onclick="relocation()" value="当前位置">
+            <input type="button" class="btn" onclick="reload()" value="刷新">
+        </div>
+
         <!-- <div class="input-item">
         <input id="clearMarker" type="button" class="btn" onclick="clearMarker()" value="删除点标记">
         <input id="updateMarker" type="button" class="btn" onclick="updateContent()" value="更新点标记内容">
     </div> -->
-    </div>
+    </div> 
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fa0ec07efc91bc35d52a61d7755e8856">
     </script>
     <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
-    <script type="text/javascript" src="./markers.js"></script>
-    <script src="overlays.js"></script>
+    <script type="text/javascript" src="./script/markers.js"></script>
+    <script src="./script/overlays.js"></script>
     <script type="text/javascript">
         var marker, curPosition, endPosition, driving, map = new AMap.Map("container", {
             resizeEnable: true,
@@ -121,7 +130,7 @@
 
         // 绘制矩形
         var overlays = [];
-        if (overlayArr && overlayArr.length > 0) {
+        if (overlayArr && overlayArr?.length > 0) {
             overlayArr.forEach(overlay => {
                 var path = [];
                 overlay.forEach(o => {
@@ -130,21 +139,29 @@
                 overlays.push(path);
             });
         }
-        AMap.plugin('AMap.MouseTool', function () {
-            var mouseTool = new AMap.MouseTool(map);
-            //监听draw事件可获取画好的覆盖物 
-            mouseTool.on('draw', function (e) {
-                overlays.push(e.obj.getPath());
-            })
-            mouseTool.polygon({
-                fillColor: '#00b0ff',
-                strokeColor: '#80d8ff'
-                //同Polygon的Option设置
-            });
-        })
 
+        function drawPolygon() {
+            AMap.plugin('AMap.MouseTool', function () {
+                var mouseTool = new AMap.MouseTool(map);
+                //监听draw事件可获取画好的覆盖物 
+                mouseTool.on('draw', function (e) {
+                    overlays.push(e.obj.getPath());
+                })
+                mouseTool.polygon({
+                    fillColor: '#00b0ff',
+                    strokeColor: '#80d8ff'
+                    //同Polygon的Option设置
+                });
+            })
+        }
+
+        function reload() {
+            location.reload();
+        }
+
+        var geolocation;
         AMap.plugin('AMap.Geolocation', function () {
-            var geolocation = new AMap.Geolocation({
+            geolocation = new AMap.Geolocation({
                 enableHighAccuracy: true, //是否使用高精度定位，默认:true
                 timeout: 10000, //超过10秒后停止定位，默认：5s
                 buttonPosition: 'LB', //定位按钮的停靠位置
@@ -152,9 +169,12 @@
                 zoomToAccuracy: false, //定位成功后是否自动调整地图视野到定位点
                 panToLocation: true
             });
-            map.addControl(geolocation);
-            // setInterval(()=>{
-            geolocation.getCurrentPosition(function (status, result) {
+            map.addControl(geolocation); 
+            relocation()
+            geolocation.watchPosition()
+        });
+        function relocation() {
+            geolocation?.getCurrentPosition(function (status, result) {
                 if (status == 'complete') {
                     // debugger
                     curPosition = [result.position.lng, result.position.lat]
@@ -163,11 +183,8 @@
                     // onError(result)
                 }
             });
-            // },1000)
+        }
 
-            geolocation.watchPosition( )
-
-        });
         // debugger
         // console.log(markers)
         if (capitals && capitals.length) {
@@ -231,7 +248,7 @@
 
 
         function drivingPlan(pos) {
-            pos && (endPosition = pos);
+            endPosition = pos ?? endPosition;
             if (!endPosition) {
                 log.error("未设置终点");
                 return;
@@ -243,7 +260,7 @@
             overlays && overlays.length > 0 && driving.setAvoidPolygons(overlays);
 
             // 根据起终点经纬度规划驾车导航路线
-            // curPosition = curPosition || [116.2705, 40.165581]; // 如果当前位置为null，则选用高教大楼地址
+            // curPosition = curPosition ?? [116.2705, 40.165581]; // 如果当前位置为null，则选用高教大楼地址
             // curPosition = [116.237925,40.076463] // 从辰安科技出发
             driving.search(new AMap.LngLat(curPosition[0], curPosition[1]), new AMap.LngLat(endPosition[0], endPosition[
                 1]),
