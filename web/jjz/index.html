@@ -55,6 +55,7 @@
             width: 22rem;
             height: 12rem;
             z-index: 170;
+            right: 2rem;
         }
 
         .input-card .btn {
@@ -80,12 +81,66 @@
             border-radius: 4px;
             overflow: hidden;
         }
+
+        .show {
+            display: none;
+        }
+
+        .hide:target+.show {
+            display: inline;
+        }
+
+        .hide:target {
+            display: none;
+        }
+
+        .hide:target~.input-card {
+            display: flex;
+        }
+
+        .show:target~.input-card {
+            display: none;
+        }
+
+        /*style the (+) and (-) */
+        .hide,
+        .show {
+            width: 1.5rem;
+            height: 3rem;
+            border-radius: .8rem;
+            font-size: 1.7rem;
+            color: #fff;
+            text-shadow: 0 1px 0 #666;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 1px 1px 2px #000;
+            background: #44aff7;
+            opacity: .95;
+            /* margin-right: 0; */
+            /* float: right; */
+            top: .8rem;
+            right: .2rem;
+            margin-bottom: 25px;
+            position: absolute;
+        }
+
+        .hide:hover,
+        .show:hover {
+            color: #eee;
+            text-shadow: 0 0 1px #666;
+            text-decoration: none;
+            box-shadow: 0 0 4px #222 inset;
+            opacity: 1;
+            margin-bottom: 25px;
+        }
     </style>
 </head>
 
 <body>
     <!-- <div id="panel"></div> -->
     <div id="container"></div>
+    <a href="#hide1" class="hide" id="hide1">+</a>
+    <a href="#show1" class="show" id="show1">-</a>
     <div class="input-card">
 
         <div class="input-item">
@@ -106,9 +161,10 @@
         <hr style="margin:0px;height:.1rem;border:0px;background-color:#D5D5D5;color:#D5D5D5;margin-top: 0.4rem;" />
         <div class="input-item" style="justify-content: center; ">
 
-            <input type="button" class="btn" onclick="drawPolygon()" value="绘制不可达区域">
+            <input type="button" class="btn" onclick="drawPolygon()" value="绘制">
             <input type="button" class="btn" onclick="relocation()" value="当前位置">
             <input type="button" class="btn" onclick="reload()" value="刷新">
+            <input type="button" class="btn" id="switchWatch" onclick="switchWatchingPosition()" value="关闭定位">
         </div>
 
         <!-- <div class="input-item">
@@ -170,8 +226,8 @@
                 panToLocation: true
             });
             map.addControl(geolocation);
-            relocation()
-            geolocation.watchPosition()
+            relocation();
+            switchWatchingPosition();
         });
         function relocation() {
             geolocation.getCurrentPosition(function (status, result) {
@@ -183,6 +239,19 @@
                     // onError(result)
                 }
             });
+        }
+        var watchId;
+        function switchWatchingPosition() {
+            var ele = document.getElementById('switchWatch');
+            if (watchId) {
+                clearWatch(watchId);
+                watchId = null;
+                ele.value = '开启定位';
+            }
+            else {
+                watchId = geolocation.watchPosition();
+                ele.value = '关闭定位';
+            }
         }
 
 
@@ -258,18 +327,18 @@
 
         var marker = new AMap.Marker({ content: ' ', map: map });
 
-        mass.on('mouseover', function (e) { 
+        mass.on('mouseover', function (e) {
             marker.setPosition(e.data.lnglat);
             marker.setLabel({ content: e.data.name })
         });
-        mass.on('mouseout', function (e) {  
+        mass.on('mouseout', function (e) {
             marker.setLabel({ content: '' })
         });
-        mass.on('touchstart', function (e) { 
+        mass.on('touchstart', function (e) {
             marker.setPosition(e.data.lnglat);
             marker.setLabel({ content: e.data.name })
         });
-        mass.on('touchend', function (e) {  
+        mass.on('touchend', function (e) {
             // marker.setPosition(e.data.lnglat);
             // marker.setLabel({ content: e.data.name })
             marker.setLabel({ content: '' })
