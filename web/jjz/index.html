@@ -7,9 +7,9 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>进京证</title>
-    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
-    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
-    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.DrivingRender1120.css" />
+    <script src="./script/demoutils.js"></script>
+    <link rel="stylesheet" href="./css/demo-center.css" />
+    <link rel="stylesheet" href="./css/AMap.DrivingRender1120.css" />
     <style>
         html,
         body,
@@ -103,9 +103,9 @@
         </div>
         <input type="button" class="btn" onclick="drivingPlan()" value="开始规划">
 
-        <hr style="margin:0px;height:.1rem;border:0px;background-color:#D5D5D5;color:#D5D5D5;margin-top: 0.4rem;"/>
+        <hr style="margin:0px;height:.1rem;border:0px;background-color:#D5D5D5;color:#D5D5D5;margin-top: 0.4rem;" />
         <div class="input-item" style="justify-content: center; ">
-            
+
             <input type="button" class="btn" onclick="drawPolygon()" value="绘制不可达区域">
             <input type="button" class="btn" onclick="relocation()" value="当前位置">
             <input type="button" class="btn" onclick="reload()" value="刷新">
@@ -115,10 +115,10 @@
         <input id="clearMarker" type="button" class="btn" onclick="clearMarker()" value="删除点标记">
         <input id="updateMarker" type="button" class="btn" onclick="updateContent()" value="更新点标记内容">
     </div> -->
-    </div> 
+    </div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fa0ec07efc91bc35d52a61d7755e8856">
     </script>
-    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="./script/addToolbar.js"></script>
     <script type="text/javascript" src="./script/markers.js"></script>
     <script src="./script/overlays.js"></script>
     <script type="text/javascript">
@@ -130,7 +130,7 @@
 
         // 绘制矩形
         var overlays = [];
-        if (overlayArr && overlayArr?.length > 0) {
+        if (overlayArr && overlayArr.length > 0) {
             overlayArr.forEach(overlay => {
                 var path = [];
                 overlay.forEach(o => {
@@ -169,12 +169,12 @@
                 zoomToAccuracy: false, //定位成功后是否自动调整地图视野到定位点
                 panToLocation: true
             });
-            map.addControl(geolocation); 
+            map.addControl(geolocation);
             relocation()
             geolocation.watchPosition()
         });
         function relocation() {
-            geolocation?.getCurrentPosition(function (status, result) {
+            geolocation.getCurrentPosition(function (status, result) {
                 if (status == 'complete') {
                     // debugger
                     curPosition = [result.position.lng, result.position.lat]
@@ -202,8 +202,8 @@
                     // size:new AMap.Size(72,72),
                     // mageOffset:new AMap.Pixel(6,18),
                     image: marker.aa === '2' ?
-                        "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png" :
-                        "http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
+                        "./image/poi-marker-red.png" :
+                        "./image/poi-marker-default.png",
                     imageSize: new AMap.Size(12.5, 17.5)
                 }),
                 title: marker.name,
@@ -216,7 +216,7 @@
 
         function updateIcon() {
 
-            marker.setIcon('http://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png')
+            marker.setIcon('./image/poi-marker-red.png')
         }
 
 
@@ -248,7 +248,7 @@
 
 
         function drivingPlan(pos) {
-            endPosition = pos ?? endPosition;
+            endPosition = pos || endPosition;
             if (!endPosition) {
                 log.error("未设置终点");
                 return;
