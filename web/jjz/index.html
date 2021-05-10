@@ -185,12 +185,16 @@
             });
         }
 
-        // debugger
-        // console.log(markers)
+
+
+
+        // 加载摄像头点
         if (capitals && capitals.length) {
             for (let index = 0; index < capitals.length; index++) {
                 const element = capitals[index];
-                addMarker(element)
+                element.style = element.aa === '2' ? 0 : 1;
+                element.lnglat = element.position;
+                // addMarker(element)
             }
             log.success('绘制摄像头完成【' + capitals.length + '】')
         }
@@ -211,7 +215,7 @@
                 position: marker.position, //[116.406315,39.908775],
                 offset: new AMap.Pixel(-6.25, -17.5)
             });
-            marker.setMap(map);
+            // marker.setMap(map);
         }
 
         function updateIcon() {
@@ -227,6 +231,51 @@
                 marker = null;
             }
         }
+
+
+        // 加载海量摄像头点
+        var style = [{
+            url: './image/poi-marker-red.png',
+            anchor: new AMap.Pixel(6.25, 17.5),
+            size: new AMap.Size(12.5, 17.5)
+        }, {
+            url: './image/poi-marker-default.png',
+            anchor: new AMap.Pixel(6.25, 17.5),
+            size: new AMap.Size(12.5, 17.5)
+        }, {
+            url: 'https://a.amap.com/jsapi_demos/static/images/mass2.png',
+            anchor: new AMap.Pixel(3, 3),
+            size: new AMap.Size(5, 5)
+        }
+        ];
+
+        var mass = new AMap.MassMarks(capitals, {
+            opacity: 0.8,
+            zIndex: 111,
+            cursor: 'pointer',
+            style: style
+        });
+
+        var marker = new AMap.Marker({ content: ' ', map: map });
+
+        mass.on('mouseover', function (e) { 
+            marker.setPosition(e.data.lnglat);
+            marker.setLabel({ content: e.data.name })
+        });
+        mass.on('mouseout', function (e) {  
+            marker.setLabel({ content: '' })
+        });
+        mass.on('touchstart', function (e) { 
+            marker.setPosition(e.data.lnglat);
+            marker.setLabel({ content: e.data.name })
+        });
+        mass.on('touchend', function (e) {  
+            // marker.setPosition(e.data.lnglat);
+            // marker.setLabel({ content: e.data.name })
+            marker.setLabel({ content: '' })
+        });
+
+        mass.setMap(map);
 
         // 设置起点
         function setStart(pos) {
